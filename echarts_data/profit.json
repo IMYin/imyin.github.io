@@ -1,0 +1,252 @@
+{
+    "stocks": [
+        {
+            "trade_date": "2025-06-24",
+            "profit": "616.81"
+        },
+        {
+            "trade_date": "2025-06-25",
+            "profit": "3054.71"
+        },
+        {
+            "trade_date": "2025-06-26",
+            "profit": "5566.0"
+        },
+        {
+            "trade_date": "2025-06-27",
+            "profit": "1571.02"
+        },
+        {
+            "trade_date": "2025-06-30",
+            "profit": "2006.4"
+        },
+        {
+            "trade_date": "2025-07-01",
+            "profit": "4607.42"
+        },
+        {
+            "trade_date": "2025-07-02",
+            "profit": "5442.19"
+        },
+        {
+            "trade_date": "2025-07-03",
+            "profit": "7912.47"
+        },
+        {
+            "trade_date": "2025-07-04",
+            "profit": "-6311.74"
+        },
+        {
+            "trade_date": "2025-07-07",
+            "profit": "7558.61"
+        },
+        {
+            "trade_date": "2025-07-08",
+            "profit": "-3211.58"
+        },
+        {
+            "trade_date": "2025-07-09",
+            "profit": "27170.42"
+        },
+        {
+            "trade_date": "2025-07-10",
+            "profit": "5848.83"
+        },
+        {
+            "trade_date": "2025-07-11",
+            "profit": "13095.07"
+        },
+        {
+            "trade_date": "2025-07-14",
+            "profit": "-26436.14"
+        },
+        {
+            "trade_date": "2025-07-15",
+            "profit": "-3196.95"
+        },
+        {
+            "trade_date": "2025-07-16",
+            "profit": "36657.02"
+        },
+        {
+            "trade_date": "2025-07-17",
+            "profit": "37483.7"
+        },
+        {
+            "trade_date": "2025-07-18",
+            "profit": "-55300.42"
+        },
+        {
+            "trade_date": "2025-07-21",
+            "profit": "-24694.17"
+        },
+        {
+            "trade_date": "2025-07-22",
+            "profit": "-47511.58"
+        },
+        {
+            "trade_date": "2025-07-23",
+            "profit": "-140749.87"
+        },
+        {
+            "trade_date": "2025-07-24",
+            "profit": "-41697.66"
+        },
+        {
+            "trade_date": "2025-07-25",
+            "profit": "-18396.99"
+        },
+        {
+            "trade_date": "2025-07-28",
+            "profit": "4415.75"
+        },
+        {
+            "trade_date": "2025-07-29",
+            "profit": "-11687.87"
+        },
+        {
+            "trade_date": "2025-07-30",
+            "profit": "-2119.17"
+        },
+        {
+            "trade_date": "2025-07-31",
+            "profit": "760.0"
+        },
+        {
+            "trade_date": "2025-08-01",
+            "profit": "9575.24"
+        },
+        {
+            "trade_date": "2025-08-04",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-05",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-06",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-20",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-21",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-22",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-25",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-26",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-27",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-28",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-08-29",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-01",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-02",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-03",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-04",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-05",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-08",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-09",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-10",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-11",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-09-12",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-11-24",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-11-25",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-11-26",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-11-27",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-11-28",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-12-01",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-12-02",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-12-03",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-12-04",
+            "profit": "0.0"
+        },
+        {
+            "trade_date": "2025-12-05",
+            "profit": "9114.0"
+        },
+        {
+            "trade_date": "2025-12-08",
+            "profit": "6293.0"
+        },
+        {
+            "trade_date": "2025-12-09",
+            "profit": "-12586.0"
+        }
+    ]
+}

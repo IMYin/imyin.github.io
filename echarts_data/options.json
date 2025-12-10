@@ -1,0 +1,174 @@
+{
+    "options": {
+        "10008772": {
+            "name": "500ETF2506C5750",
+            "code": "10008772",
+            "profit": 828.0,
+            "trades": [
+                {
+                    "date": "20250604",
+                    "transaction_type": "卖",
+                    "volume": 30,
+                    "entry_price": 0.0626
+                },
+                {
+                    "date": "20250604",
+                    "transaction_type": "卖",
+                    "volume": 5,
+                    "entry_price": 0.0737
+                },
+                {
+                    "date": "20250605",
+                    "transaction_type": "卖",
+                    "volume": 3,
+                    "entry_price": 0.087
+                },
+                {
+                    "date": "20250605",
+                    "transaction_type": "卖",
+                    "volume": 3,
+                    "entry_price": 0.0965
+                },
+                {
+                    "date": "20250609",
+                    "transaction_type": "卖",
+                    "volume": 3,
+                    "entry_price": 0.1153
+                },
+                {
+                    "date": "20250611",
+                    "transaction_type": "卖",
+                    "volume": 3,
+                    "entry_price": 0.1138
+                },
+                {
+                    "date": "20250613",
+                    "transaction_type": "买",
+                    "volume": 30,
+                    "entry_price": 0.0721
+                },
+                {
+                    "date": "20250613",
+                    "transaction_type": "买",
+                    "volume": 5,
+                    "entry_price": 0.0723
+                },
+                {
+                    "date": "20250613",
+                    "transaction_type": "买",
+                    "volume": 3,
+                    "entry_price": 0.0723
+                },
+                {
+                    "date": "20250613",
+                    "transaction_type": "买",
+                    "volume": 3,
+                    "entry_price": 0.0723
+                },
+                {
+                    "date": "20250613",
+                    "transaction_type": "买",
+                    "volume": 3,
+                    "entry_price": 0.0723
+                },
+                {
+                    "date": "20250613",
+                    "transaction_type": "买",
+                    "volume": 3,
+                    "entry_price": 0.0723
+                }
+            ]
+        },
+        "10009090": {
+            "name": "500ETF2505C5750",
+            "code": "10009090",
+            "profit": 10014.0,
+            "trades": [
+                {
+                    "date": "20250429",
+                    "transaction_type": "卖",
+                    "volume": 50,
+                    "entry_price": 0.05
+                },
+                {
+                    "date": "20250430",
+                    "transaction_type": "卖",
+                    "volume": 8,
+                    "entry_price": 0.062
+                },
+                {
+                    "date": "20250507",
+                    "transaction_type": "买",
+                    "volume": 50,
+                    "entry_price": 0.07
+                },
+                {
+                    "date": "20250507",
+                    "transaction_type": "买",
+                    "volume": 8,
+                    "entry_price": 0.07
+                },
+                {
+                    "date": "20250512",
+                    "transaction_type": "卖",
+                    "volume": 30,
+                    "entry_price": 0.0855
+                },
+                {
+                    "date": "20250513",
+                    "transaction_type": "卖",
+                    "volume": 4,
+                    "entry_price": 0.0933
+                },
+                {
+                    "date": "20250513",
+                    "transaction_type": "卖",
+                    "volume": 4,
+                    "entry_price": 0.0932
+                },
+                {
+                    "date": "20250514",
+                    "transaction_type": "卖",
+                    "volume": 3,
+                    "entry_price": 0.1162
+                },
+                {
+                    "date": "20250514",
+                    "transaction_type": "卖",
+                    "volume": 3,
+                    "entry_price": 0.1266
+                },
+                {
+                    "date": "20250521",
+                    "transaction_type": "买",
+                    "volume": 30,
+                    "entry_price": 0.0444
+                },
+                {
+                    "date": "20250521",
+                    "transaction_type": "买",
+                    "volume": 4,
+                    "entry_price": 0.0444
+                },
+                {
+                    "date": "20250521",
+                    "transaction_type": "买",
+                    "volume": 4,
+                    "entry_price": 0.0444
+                },
+                {
+                    "date": "20250521",
+                    "transaction_type": "买",
+                    "volume": 3,
+                    "entry_price": 0.0444
+                },
+                {
+                    "date": "20250521",
+                    "transaction_type": "买",
+                    "volume": 3,
+                    "entry_price": 0.0444
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,1826 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="zh-cn"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+  <style>
+    body {
+      font-family: "LXGW WenKai Lite", sans-serif;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>决策树 &middot; Hippo Inv.</title>
+  <meta name="title" content="决策树 &middot; Hippo Inv." />
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.01e5dc7ba7df9df00f82e69a0cbd07b54bd51df1e2b9cfb9b15f859902aaebfa.css"
+    integrity="sha256-AeXce6ffnfAPguaaDL0HtUvVHfHiuc&#43;5sV&#43;FmQKq6/o=" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.0b250a079f6c2f7d0e03d1f0aa1308acb88137e3caebe1268f7478f0c87c5bf8.js"
+    integrity="sha256-CyUKB59sL30OA9HwqhMIrLiBN&#43;PK6&#43;Emj3R48Mh8W/g=" data-copy="Copy" data-copied="Copied"></script>
+  
+  
+  <meta name="description" content="
+      
+        决策树是一种树状的决策模型，通过递归地切分解释变量来学习，并用节点测试解释变量来指定输出。
+      
+    " />
+  
+  
+  
+  <link rel="canonical" href="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/" />
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/">
+  <meta property="og:site_name" content="Hippo Inv.">
+  <meta property="og:title" content="决策树">
+  <meta property="og:description" content="决策树是一种树状的决策模型，通过递归地切分解释变量来学习，并用节点测试解释变量来指定输出。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2016-10-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2016-10-28T00:00:00+00:00">
+    <meta property="article:tag" content="机器学习">
+    <meta property="article:tag" content="算法">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover.png">
+  <meta name="twitter:title" content="决策树">
+  <meta name="twitter:description" content="决策树是一种树状的决策模型，通过递归地切分解释变量来学习，并用节点测试解释变量来指定输出。">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "决策树",
+    "headline": "决策树",
+    
+    "abstract": "决策树是一种树状的决策模型，通过递归地切分解释变量来学习，并用节点测试解释变量来指定输出。",
+    "inLanguage": "zh-cn",
+    "url" : "https:\/\/www.hippoinv.com\/posts\/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91\/",
+    "author" : {
+      "@type": "Person",
+      "name": "小隐"
+    },
+    "copyrightYear": "2016",
+    "dateCreated": "2016-10-28T00:00:00\u002b00:00",
+    "datePublished": "2016-10-28T00:00:00\u002b00:00",
+    
+    "dateModified": "2016-10-28T00:00:00\u002b00:00",
+    
+    "keywords": ["机器学习","算法","python"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "684"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://www.hippoinv.com/",
+       "name": "",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://www.hippoinv.com/posts/",
+       "name": "",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://www.hippoinv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/",
+       "name": "技术文章",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "决策树",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+  <meta name="author" content="小隐" />
+  
+  
+  
+  <link href="mailto:yinlife777@gmail.com" rel="me" />
+  
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://www.hippoinv.com/lib/katex/katex.min.19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75.css"
+    integrity="sha256-GQlRJzV&#43;1tKf4KY6awAMkTqJ9/GWO3Zd03Fel8mFLnU="
+  />
+  
+  
+  <script defer src="https://www.hippoinv.com/lib/katex/katex.min.e8d885505949f3a5f4abdd5dd0d53696bd1371ad26ffbf4f310dcd77c8cdae89.js" integrity="sha256-6NiFUFlJ86X0q91d0NU2lr0Tca0m/79PMQ3Nd8jNrok="></script>
+  
+  
+  <script
+    defer
+    src="https://www.hippoinv.com/lib/katex/auto-render.min.bb53eb953394531aae36fdd537065c4244eb8542901a3ce914601d932675b8ac.js"
+    integrity="sha256-u1PrlTOUUxquNv3VNwZcQkTrhUKQGjzpFGAdkyZ1uKw="
+    onload="renderMathInElement(document.body);"
+  ></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+  
+  
+  
+  
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E9HCG9FD1"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0E9HCG9FD1');
+        }
+      </script>
+
+
+  
+  
+</head><body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >跳到主要内容</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Hippo Inv.</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/hippo/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >
+
+  <span class="icon relative inline-block align-text-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M407 47c9.4-9.4 24.6-9.4 33.9 0l17.2 17.2c1.9-.1 3.9-.2 5.8-.2h32c11.2 0 21.9 2.3 31.6 6.5L543 55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L564 101.9c7.6 12.2 12 26.7 12 42.1c0 10.2 7.4 18.8 16.7 23c27.9 12.5 47.3 40.5 47.3 73c0 26.2-12.6 49.4-32 64v32c0 8.8-7.2 16-16 16H560c-8.8 0-16-7.2-16-16V320H480v16c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V318.4c-11.8-2.4-22.7-7.4-32-14.4c-1.5-1.1-2.9-2.3-4.3-3.5c-17-14.7-27.7-36.4-27.7-60.5c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 44.7 26.2 83.2 64 101.2V352c0 17.7 14.3 32 32 32h32v64c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V372c-19.8 7.7-41.4 12-64 12s-44.2-4.3-64-12v76c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V329.1L45.9 369.7c-5.4 12.1-19.6 17.6-31.7 12.2S-3.3 362.4 2.1 350.3L24 300.9c5.3-11.9 8-24.7 8-37.7C32 155.7 117.2 68 223.8 64.1l.2-.1h7.2H256h32c41.7 0 83.4 12.1 117.2 25.7c1.7-1.8 3.5-3.6 5.3-5.2L407 81c-9.4-9.4-9.4-24.6 0-33.9zm73 185a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm88 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM480 144a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+  </span>
+
+
+</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >关于</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >文章</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/categories/"
+                  title="分类"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >分类</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/tags/"
+                  title="标签"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >标签</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+                  <button
+                    id="search-button-1"
+                    title="搜索 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        决策树
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2016-10-28 00:00:00 &#43;0000 UTC">2016-10-28</time>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="https://www.hippoinv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >技术文章</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="https://www.hippoinv.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >机器学习</a
+            >
+          
+            <a
+              href="https://www.hippoinv.com/tags/%E7%AE%97%E6%B3%95/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >算法</a
+            >
+          
+            <a
+              href="https://www.hippoinv.com/tags/python/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Python</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+        <div class="prose">
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mb-6 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_e51d13d34fd827f5.webp 330w,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_bc739bfcd6b4d250.webp 660w
+            
+              ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_7adb625bd61592c1.webp 1024w
+            
+            
+              
+                ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_a1a3b95baf7a0a16.webp 1200w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="1200"
+        height="662"
+        class="mb-6 rounded-md"
+        
+        
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_7ff4472408b0ee80.png" srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_5a978848cc4adef7.png 330w,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_7ff4472408b0ee80.png 660w
+          
+            ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover_hu_98c46c296ce8bd68.png 1024w
+          
+          
+            ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/cover.png 1200w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+          
+        </div>
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#决策树简介">决策树简介　　</a></li>
+        <li><a href="#训练决策树">训练决策树</a></li>
+        <li><a href="#问题选择">问题选择</a></li>
+        <li><a href="#信息增益">信息增益</a></li>
+        <li><a href="#基尼不纯度">基尼不纯度</a></li>
+        <li><a href="#scikit-learn中的决策树">scikit-learn中的决策树</a></li>
+        <li><a href="#集成决策树">集成决策树</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        
+
+<h3 id="决策树简介" class="relative group">决策树简介　　 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%86%b3%e7%ad%96%e6%a0%91%e7%ae%80%e4%bb%8b" aria-label="锚点">#</a></span></h3><p>决策树就像一个树状的决策模型。它通常将解释变量递归地切分成子集来学习，如下图所示。决策树的节点用方块表示，用来测试解释变量。</p>
+<p>这些节点通过边缘连接来指定输出。比如用某个节点来测试解释变量是否超出了阈值，如果没有超过，就指向左边的节点，如果超过了，就指向右边节点。就这样重复这一过程，到达终止条件即停止。在分类问题中，叶子节点就代表着类别；在回归问题中，所有响应变量的值取平均值来作为响应变量的估计值。　　</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;icons/em_tree.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_1_0_hu_e4d02c7fe1abc0d3.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="435"
+        height="431"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_1_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h3 id="训练决策树" class="relative group">训练决策树 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%ae%ad%e7%bb%83%e5%86%b3%e7%ad%96%e6%a0%91" aria-label="锚点">#</a></span></h3><p>我们开始先用<a href="https://en.wikipedia.org/wiki/ID3_algorithm" target="_blank" rel="noreferrer">ID３(Iterative Dichotomiser 3)</a>算法来构建决策树。<br>
+假如现在我们需要把一些猫和狗进行分类。但是你不可以通过肉眼观察，而是通过一些它们的行为特征来分类。这些变量也就是所说的解释变量，比如是否喜欢打闹，脾气是否暴躁，三类食物中那类是最喜欢的。</p>
+<p>为了对其分类，决策树需要把解释变量作为树节点来测试。这些节点的下一节点在于它们这次的测试结果是什么。直到最到抵达叶子节点，也就测试出是猫是狗。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/train_table_dog_cat.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_3_0_hu_5ea14aedd693d9c8.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="618"
+        height="395"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_3_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>观察这些数据可以看到，猫比狗更容易发脾气。大多数狗爱打闹，而猫不爱打闹。狗更喜欢狗粮和培根，而猫喜欢猫粮和培根。解释变量是否喜欢打闹和脾气是否暴躁可以很简单得转换成二元特征值，而喜欢的食物有三个值，我们将用<a href="https://en.wikipedia.org/wiki/One-hot" target="_blank" rel="noreferrer">独热编码(One-hot)</a>来表示([1,0,0]，[0,1,0]，[0,0,1])。</p>
+<p>到此，我们可以手动得去构建一个分类规则，比如说喜欢打闹并且喜欢吃培根那就是只狗，以此类推。但是手动构建这些规则比较麻烦，我们可以通过构建决策树来制定规则。</p>
+<h3 id="问题选择" class="relative group">问题选择 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%97%ae%e9%a2%98%e9%80%89%e6%8b%a9" aria-label="锚点">#</a></span></h3><p>在决策树中，我们通常先得对解释变量进行测试，然后通过测试得到的值去预测出响应变量。但是哪些解释变量放在前面会产生更好的输出，以形成好的model？我们的思路是通过测试得到的子集中包含所有的猫或者所有的狗，这样比得到的子集中既有猫又有狗要好很多。我们还需要避免创建那种测试，把单独的一只猫或一条狗分离出去。换句话说，也就是通过测试要最大程度的降低我们的不确定性。这里就涉及到一个用来度量信息不确定性的概念：<a href="https://en.wikipedia.org/wiki/Entropy" target="_blank" rel="noreferrer">熵(entropy)</a>。</p>
+<p>熵的单位是\(bit\)，它量化了一个变量的不确定性。它的方程表示如下，其中\(n\)代表会有多少个输出，\(P(x_i)\)代表第\(i\)个输出的概率。\(b\)一般取\(２\)，\(e\)一般取\(10\)。由于\(P\)会小于\(1\)，那么取得对数为负数，所以前面加个负号让其变为正。\(H(X) = -\sum_{i=1}^nP(x_i)log_bP(x_i)\)
+比如，投硬币正面朝上的概率是\(0.5\),正面朝下的概率是\(0.5\),那么这个硬币投一次所得到的熵就等于：\(H(X) = -(0.5log_20.5+0.5log_20.5) = 1.0\)
+也就是对于投硬币这件事，产生的所有可能值包含的信息期望值为\(1bit\)。如果我们投两个硬币的话，也可以轻松得到这件事产生的所有可能值包含的信息期望值为\(２bit\)。假如，我们对硬币做一些手脚，使得投掷后正面朝上的概率为\(0.8\)，正面朝下的概率为\(0.2\)，那么它的熵为：\(\)H(X) = -(0.8log_20.8+0.2log_20.2) = 0.7219280948873623
+\(\)可以看到，它的值比\(1\)小，虽然硬币投出仍然会产生两种结果，但是它的不确定性小了。</p>
+<p>接下来我们来计算动物分类的熵。如果这些训练数据中猫和狗的数量相等，那么计算出来的熵就是\(1\)，我们将得不到任何信息，这就像我们刚刚投硬币的例子。但是我们可以看到这份数据中猫的数量有\(8\)只，狗有\(6\)只，那么它决策的熵就是:\(\)H(X) = -(\frac{6}{14}log_2\frac{6}{14}log_2+\frac{8}{14}log\frac{8}{14}) = 0.985228136.342516
+\(\)由于猫的数量相对要多，所以事件的不确定性要少一些。接下来我们就在这些解释变量中用这种方法找出不确定性最小的。我们可以测试<em>是否喜欢打闹</em>这个解释变量，将它们分成两组，<em>喜欢</em>和<em>不喜欢</em>，结果如下图所示：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/fetch_or_nofetch.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_5_0_hu_99b1c37697e4e4db.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="325"
+        height="168"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_5_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>决策树经常会用类流程图来展示它的决策过程。在图中可以看到，上面的节点是根节点，包含了所有将要测试的解释变量。在根节点中还没有开始测试，只根据<em>是否爱打闹</em>得到的熵为\(0.985\)。前面我们说将解释变量<em>是否爱打闹</em>转换为二元变量，左边的子节点为\(０\)，右边的为\(１\)。由于在左边有\(７\)只猫和\(２\)只狗，所以得到的熵为\(H(X) = -(\frac{2}{9}log_2\frac{2}{9}+\frac{7}{9}log_2\frac{7}{9}) = 0.7642045065086203\)
+右边的子集有\(１\)只猫和\(４\)只狗，所以得到的熵为：\(H(X) = -(\frac{1}{5}log_2\frac{1}{5}+\frac{4}{5}log_2\frac{4}{5}) = 0.721928094887362\)
+现在我们换成<em>脾气是否暴躁</em>这种解释变量来测试，那么将得到下面这幅图。脾气温顺的在左边节点，脾气暴躁的在右边节点。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/grumpy_or_nogrumpy.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_7_0_hu_7e27562983374520.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="315"
+        height="163"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_7_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>我们还可以按照这种思路测试剩下的解释变量，比如最喜欢的食物是猫食：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/cat_food.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_9_0_hu_36dbd76b880d968f.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="314"
+        height="161"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_9_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<h3 id="信息增益" class="relative group">信息增益 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bf%a1%e6%81%af%e5%a2%9e%e7%9b%8a" aria-label="锚点">#</a></span></h3><p>对解释变量<em>最喜欢的食物</em>是猫食的测试结果为，右节点中喜欢猫食的只有猫，没有狗，熵为０；而左节点中有２只猫６只狗，熵为0.811\(bit\)。那么至此，到底哪一个变量最大程度得降低了分类的不确定性呢？子集的熵的均值看起来是个合理的度量指标。在刚刚测试过程中，发现猫食的子集熵均值最小。直观上看确实是这样的，因为它可以识别出将近一半的样本。但是这么做的话其实只是得到局部最优。比方说测试出的一个子集中有２只狗没有猫，另一个子集中有４只狗８只猫。得到它们的熵一个是\(０\)，一个是\(0.9182958340544896\)，取平数为 0.459，但是会发现其中一个子集的熵将近\(1bit\)，这就好比说我们其实并没有消除多少信息的不确定性。因此，接下来我们将用<a href="https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence" target="_blank" rel="noreferrer">信息增益(information gain)</a>(如今改名为<em>相对熵</em>)来合理度量熵的降幅。信息增益的表达式如下，表示的是父节点的熵\(H(T)\)与其子节点熵的加权平均值的差。其中\(T\)表示目前的实例，\(a\)表示需要测试的解释变量。\({x\epsilon vals(a)}\)表示实例\(x\)属性是解释变量\(a\)的值。\({x\epsilon T\mid x_a=v}\)表示解释变量\(a\)的值等于\(v\)的数量。\(H({x\epsilon T\mid x_a=v})\)表示解释变量\(a\)的值为\(ｖ\)的实例子集的熵。\(IG(T,a)=H(T)-\sum_{v\epsilon vals(a)} \frac{\lvert {x\epsilon T \mid x_a=v} \rvert }{\lvert T \rvert }H({x\epsilon T\mid x_a=v})\)
+下表是总体信息增益的计算结果，可以看到，猫粮测试是最佳选择，因为其信息增益最大。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/info_gain_all.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_ef1f32caf0f00a67.webp 330w,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_91d5e08c44a441b7.webp 660w
+            
+              
+                ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_d6c894de33214dda.webp 693w
+              
+            
+            
+              
+                ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_d6c894de33214dda.webp 693w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="693"
+        height="282"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_f7494b5ca2e6f28c.jpg" srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_5ecce222414566e2.jpg 330w,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0_hu_f7494b5ca2e6f28c.jpg 660w
+          
+            ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0.jpg 693w
+          
+          
+            ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_11_0.jpg 693w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>现在我们根据上表把其它的节点加进去，其中一个子节点只有猫，另一个节点中有\(2\)只猫\(６\)只狗。可以得到一下结果：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/info_gain_leftsub.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_42b27c59a0781364.webp 330w,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_9183fb7160f5d7cd.webp 660w
+            
+              
+                ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_1c1f9d92e4458f7f.webp 690w
+              
+            
+            
+              
+                ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_1c1f9d92e4458f7f.webp 690w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="690"
+        height="207"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_2bf3aae8191b36fe.jpg" srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_6de419a6810be2f2.jpg 330w,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0_hu_2bf3aae8191b36fe.jpg 660w
+          
+            ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0.jpg 690w
+          
+          
+            ,https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_13_0.jpg 690w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>所有的测试都会产生熵为\(０\)的情况，但是可以看到<em>脾气是否暴躁</em>和<em>是否爱打闹</em>所得到的信息增益要大。ID3算法会任意选择一个节点作为测试，下面来看看<em>脾气是否暴躁</em>这个解释变量，可以看出，它的右节点有\(４\)只猫，左节点有\(２\)只猫和\(２\)只狗。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/info_gain_grumpy.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_15_0_hu_2c23e58de4a46f5.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="463"
+        height="280"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_15_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>现在我们对剩下的解释变量计算信息增益，包括<em>脾气是否暴躁</em>，<em>最喜欢狗粮</em>，<em>最喜欢培根</em>，这些解释变量都会产生一个叶节点中包含\(１\)只猫和\(１\)只狗，另一个叶节点中包含剩下的动物，计算的信息增益结果如下图：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/info_gain_anothers.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_17_0_hu_c5ae4a49248305be.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="619"
+        height="189"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_17_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>现在我们随便挑选一个解释变量(<em>脾气是否暴躁</em>)来看，发现其左节点包含了\(１\)只猫和\(１\)只狗，另一个节点中包含了\(２\)只猫和\(１\)只狗。其他两个解释变量(<em>最喜欢培根；最喜欢狗粮</em>)产生了同样的结果——一个节点中包含了\(１\)只猫和\(１\)只狗，另一个节点中包含了\(２\)只猫。之后，我们对<em>最喜欢狗粮</em>这个变量进行测试，结果如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/info_gain_dog_food.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_19_0_hu_c236a7d48b047c3d.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="403"
+        height="395"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_19_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>下面根据上面的测试数据来进行一些分类：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;icons/info_gain_classified.jpg&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_21_0_hu_16024480ff51d057.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="653"
+        height="163"
+        class="mx-auto my-0 rounded-md"
+        alt="jpeg"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/%E5%86%B3%E7%AD%96%E6%A0%91_21_0.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</p>
+<p>我们看到，第一类动物，喜欢打闹，脾气不暴躁，喜欢培根，通过上面计算的流程规则，我们把这种动物归类为狗。以此类推。</p>
+<p>好了，以上我们用ID3算法实现了一个决策树，当然还有其他的方法，C4.5就是ID3的改进版，可以用来处理连续的解释变量并考虑特征之丢失的情况。C4.5算法可以对树进行<em>修剪(prune)</em>,以减小决策树的规模。在scikit-learn中决策树用的是CART算法，它也支持树的修剪。</p>
+<h3 id="基尼不纯度" class="relative group">基尼不纯度 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9f%ba%e5%b0%bc%e4%b8%8d%e7%ba%af%e5%ba%a6" aria-label="锚点">#</a></span></h3><p>前面我们通过求最大的信息增益来构建决策树，这里还有一种常用的方法，<a href="https://en.wikipedia.org/wiki/Gini_coefficient" target="_blank" rel="noreferrer">基尼不纯度(Gini impurity)</a>。用来度量一个集合中每种类型的比例，公式如下：\(Ginit=1-\sum_{i-1}^{j}P(i\lvert t)^2\)　其中，j是类型的数量，t是节点样本的子集，\(P(i\lvert t)\)是从节点子集中选择一个类型\(i\)的概率。</p>
+<p>当所有元素都是一个类型的时候，基尼不纯度就为\(0\)，因为在这些中选择元素是那个类型的概率为\(1\)。和熵一样，当所有元素的概率一样时，基尼不纯度最大，可以这么表示：\(Gini_max=1-\frac{1}{n}\)在scikit-learn中，基尼不纯度和信息增益都会支持，哪个好就用哪个。</p>
+<h3 id="scikit-learn中的决策树" class="relative group">scikit-learn中的决策树 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#scikit-learn%e4%b8%ad%e7%9a%84%e5%86%b3%e7%ad%96%e6%a0%91" aria-label="锚点">#</a></span></h3><p>接下来我们用程序构建一个决策树。数据来源是网络上一份<a href="http://archive.ics.uci.edu/ml/datasets/Internet&#43;Advertisements" target="_blank" rel="noreferrer">互联网</a>广告的数据，包含有3279张图片，其中459张是广告，2820张是正常的。我们的目的就是将广告和正常的内容进行分类，以隐藏那些广告。决策树学习算法可以从比例并不协调的数据集中生成一个不平衡的决策树（biased tree）。在决定是否值得通过过抽样（over-sampling）和欠抽样（under-sampling）的方法平衡训练集之前，我们将用不相关的数据集对模型进行评估。本例的解释变量就是图片的尺寸，网址链接里的单词，以及图片标签周围的单词。响应变量就是图片的类型。解释变量已经被转换成特征向量了。前三个特征值表示宽度，高度，图像纵横比（aspect ratio）。剩下的特征是文本变量的二元频率值。下面，我们用<a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" target="_blank" rel="noreferrer">网格搜索</a>来确定决策树模型最大最优评价效果（F1 score）的超参数，然后把决策树用在测试集进行效果评估。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/home/sunnyin/ML-Data/ad-dataset/ad.data&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">explanatory_variable_columns</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">response_variable_column</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">explanatory_variable_columns</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">e</span> <span class="o">==</span> <span class="s1">&#39;ad.&#39;</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">response_variable_column</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># X = df[list(explanatory_variable_columns)]</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="nb">list</span><span class="p">(</span><span class="n">explanatory_variable_columns</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">y</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">X</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</span></span></code></pre></div><pre><code>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   0     1       2    3     4     5     6     7     8     9     ...   1548  \
+0   125   125     1.0    1     0     0     0     0     0     0  ...      0   
+1    57   468  8.2105    1     0     0     0     0     0     0  ...      0   
+2    33   230  6.9696    1     0     0     0     0     0     0  ...      0   
+3    60   468     7.8    1     0     0     0     0     0     0  ...      0   
+4    60   468     7.8    1     0     0     0     0     0     0  ...      0   
+5    60   468     7.8    1     0     0     0     0     0     0  ...      0   
+6    59   460  7.7966    1     0     0     0     0     0     0  ...      0   
+7    60   234     3.9    1     0     0     0     0     0     0  ...      0   
+8    60   468     7.8    1     0     0     0     0     0     0  ...      0   
+9    60   468     7.8    1     0     0     0     0     0     0  ...      0   
+
+   1549  1550  1551  1552  1553  1554  1555  1556  1557  
+0     0     0     0     0     0     0     0     0     0  
+1     0     0     0     0     0     0     0     0     0  
+2     0     0     0     0     0     0     0     0     0  
+3     0     0     0     0     0     0     0     0     0  
+4     0     0     0     0     0     0     0     0     0  
+5     0     0     0     0     0     0     0     0     0  
+6     0     0     0     0     0     0     0     0     0  
+7     0     0     0     0     0     0     0     0     0  
+8     0     0     0     0     0     0     0     0     0  
+9     0     0     0     0     0     0     0     0     0  
+
+[10 rows x 1558 columns]
+</code></pre>
+<p>数据不全，而那些不全的数据用了空白加问号表示( ?),所以我们为了计算方便要将这些数据替换为-1。之后会用交叉验证的方式来对数据进行切割。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">X</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s1">&#39; *\?&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#创建一个管道和DecisionTreeClassifier，并用entropy来计算</span>
+</span></span><span class="line"><span class="cl"><span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">criterion</span><span class="o">=</span><span class="s1">&#39;entropy&#39;</span><span class="p">))])</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#接下来创建网格搜索的参数们</span>
+</span></span><span class="line"><span class="cl"><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;clf__max_depth&#39;</span><span class="p">:(</span><span class="mi">150</span><span class="p">,</span><span class="mi">155</span><span class="p">,</span><span class="mi">160</span><span class="p">),</span><span class="s1">&#39;clf__min_samples_split&#39;</span><span class="p">:(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="s1">&#39;clf__min_samples_leaf&#39;</span><span class="p">:(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#通过网格搜索的方法来找出综合评价指数f1最大的参数以及一些结论</span>
+</span></span><span class="line"><span class="cl"><span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span><span class="n">parameters</span><span class="p">,</span><span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s1">&#39;Best score: </span><span class="si">%0.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s1">&#39;Best parameters set: &#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">best_parameters</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">param_name</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span> <span class="s2">&#34;</span><span class="se">\t</span><span class="si">%s</span><span class="s2">: </span><span class="si">%r</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_name</span><span class="p">,</span><span class="n">best_parameters</span><span class="p">[</span><span class="n">param_name</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">predictions</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>Fitting 3 folds for each of 27 candidates, totalling 81 fits
+
+
+[Parallel(n_jobs=-1)]: Done  42 tasks      | elapsed:    6.9s
+[Parallel(n_jobs=-1)]: Done  81 out of  81 | elapsed:   12.7s finished
+
+
+Best score: 0.892
+Best parameters set: 
+	clf__max_depth: 155
+	clf__min_samples_leaf: 2
+	clf__min_samples_split: 2
+             precision    recall  f1-score   support
+
+          0       0.97      1.00      0.98       697
+          1       0.98      0.80      0.88       123
+
+avg / total       0.97      0.97      0.97       820
+</code></pre>
+<p>从结果中可以看出，有\(89%\)的广告图片被发现了，并且有\(98%\)真的是广告片。接下来我们可以继续改进模型。</p>
+<h3 id="集成决策树" class="relative group">集成决策树 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%9b%86%e6%88%90%e5%86%b3%e7%ad%96%e6%a0%91" aria-label="锚点">#</a></span></h3><p>最常用的就是<a href="https://en.wikipedia.org/wiki/Random_forest" target="_blank" rel="noreferrer">随机森林(random forest)</a>。在随机森林中，通常是把每个决策树的预测结果的均值或者众数作为最终的结果。在scikit-learn中，是用均值作为最终的结果。相对于单棵决策树，随机森林能够很好的避免过拟合现象，因为一棵决策树很难看到数据的全貌，也很难在训练时记住所有的噪声。</p>
+<p>下面我们来用随机森林测试一下刚才的数据：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">criterion</span><span class="o">=</span><span class="s1">&#39;entropy&#39;</span><span class="p">))])</span>
+</span></span><span class="line"><span class="cl"><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;clf__n_estimators&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;clf__max_depth&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">250</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;clf__min_samples_split&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;clf__min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span><span class="n">parameters</span><span class="p">,</span><span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;best score: </span><span class="si">%0.3f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Best parameters set:&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">best_parameters</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">param_name</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span> <span class="s2">&#34;</span><span class="se">\t</span><span class="si">%s</span><span class="s2">: </span><span class="si">%r</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="p">(</span><span class="n">param_name</span><span class="p">,</span><span class="n">best_parameters</span><span class="p">[</span><span class="n">param_name</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">predictions</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>Fitting 3 folds for each of 108 candidates, totalling 324 fits
+
+
+[Parallel(n_jobs=-1)]: Done  42 tasks      | elapsed:    7.0s
+[Parallel(n_jobs=-1)]: Done 192 tasks      | elapsed:   31.6s
+[Parallel(n_jobs=-1)]: Done 324 out of 324 | elapsed:   52.9s finished
+
+
+best score: 0.930
+Best parameters set:
+	clf__max_depth: 50
+	clf__min_samples_leaf: 1
+	clf__min_samples_split: 1
+	clf__n_estimators: 50
+             precision    recall  f1-score   support
+
+          0       0.97      1.00      0.99       697
+          1       0.98      0.85      0.91       123
+
+avg / total       0.97      0.97      0.97       820
+</code></pre>
+<p>啊哈，在这份数据集当中，虽然效果不是太明显，但是各项指标还都是有些提升的，比如召回率提升到了\(85%\)。</p>
+<h3 id="总结" class="relative group">总结 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%80%bb%e7%bb%93" aria-label="锚点">#</a></span></h3><p>我们在开始通过一个简单的例子解释了决策树的构建，详细讲解了熵、信息增益以及基尼不纯度的概念。之后通过scikit-learn对算法进行了实现。总体来讲，决策树的模型还是不错的，但是由于它很容易发生过拟合现象，所以最好用随机森林来进行分类。随机森林算法被人们大量的使用，并且在<a href="https://www.kaggle.com/" target="_blank" rel="noreferrer">kaggle</a>中也大方光彩，在后面的文章中，我还会针对随机森林继续讲解。</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="512"
+        height="512"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="小隐"
+        loading="lazy" decoding="async"
+        
+          src="https://www.hippoinv.com/img/android-chrome-512x512.png"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          作者
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          小隐
+        </div>
+      
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="mailto:yinlife777@gmail.com"
+          target="_blank"
+          aria-label="Envelope"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg></span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://service.weibo.com/share/share.php?url=https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/&amp;appkey=&amp;title=%e5%86%b3%e7%ad%96%e6%a0%91&amp;pic=&amp;ralateUid=&amp;lang"
+          title="分享到 微博"
+          aria-label="分享到 微博"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="currentColor" d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8 .3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4 .6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg></span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="mailto:?body=https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/&amp;subject=%e5%86%b3%e7%ad%96%e6%a0%91"
+          title="通过电子邮件发送"
+          aria-label="通过电子邮件发送"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/&amp;title=%e5%86%b3%e7%ad%96%e6%a0%91"
+          title="分享到 LinkedIn"
+          aria-label="分享到 LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://x.com/intent/tweet/?url=https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/&amp;text=%e5%86%b3%e7%ad%96%e6%a0%91"
+          title="分享到 X"
+          aria-label="分享到 X"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+</span></a
+        >
+      
+    
+  </section>
+
+
+      
+  
+    
+    
+    
+      
+      
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E4%BB%8E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%B0%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >从线性回归到逻辑回归：解决二元分类问题</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2016-10-28 00:00:00 &#43;0000 UTC">2016-10-28</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E8%81%8A%E8%81%8A%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >聊聊随机森林</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2016-10-28 00:00:00 &#43;0000 UTC">2016-10-28</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+        
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="pt-3">
+              
+<link href="https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: 'https:\/\/www.hippoinv.com\/posts\/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91\/',
+        pageTitle: '决策树',
+        server: 'https:\/\/artalk.hippoinv.com',
+        site: 'hippoinv',
+        
+    })
+
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
+            </div>
+          </div>
+        
+      
+    </footer>
+  </article>
+
+      </main>
+      <footer class="py-10 print:hidden">
+  
+  
+    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex list-none flex-col sm:flex-row">
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/privacy/"
+                title="隐私政策"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >隐私政策</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/copyright/"
+                title="版权声明"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >版权声明</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+      </ul>
+    </nav>
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © (2023-2025) <a href="https://hippoinv.com" target="_blank" rel="noreferrer">Hippo Inv.</a>
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class=" cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title=""
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title=""
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://www.hippoinv.com/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

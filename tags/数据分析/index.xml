@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据分析 on Hippo Inv.</title>
+    <link>https://www.hippoinv.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</link>
+    <description>Recent content in 数据分析 on Hippo Inv.</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; (2023-2025) [Hippo Inv.](https://hippoinv.com)</copyright>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.hippoinv.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>优化主力净流入稳定性分析的数学方案与代码实现</title>
+      <link>https://www.hippoinv.com/posts/stable-inflow-analysis/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/posts/stable-inflow-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>组织、可视化和描述数据</title>
+      <link>https://www.hippoinv.com/posts/data-visualization-and-description/</link>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/posts/data-visualization-and-description/</guid>
+      <description>数据可视化与描述</description>
+    </item>
+    <item>
+      <title>利用连续小波变换（CWT）对股票数据去噪</title>
+      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-cwt_denosied_stock/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-cwt_denosied_stock/</guid>
+      <description>利用连续小波变换（CWT）对股票数据去噪</description>
+    </item>
+    <item>
+      <title>投研回顾：价值投资中的分析与实践</title>
+      <link>https://www.hippoinv.com/posts/investment-review-analysis-practice-value-investing/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/posts/investment-review-analysis-practice-value-investing/</guid>
+      <description>通过分析投资策略的回顾和转变，本文介绍了价值投资的理念和实践，并以东方电缆为案例进行了详细分析。</description>
+    </item>
+    <item>
+      <title>公司财务与股价关系的研究分析</title>
+      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</guid>
+      <description>通过研究分析公司财务与股价关系，发现稳定增长的ROE和其他指标的综合影响是股价增长的关键。</description>
+    </item>
+    <item>
+      <title>某银行大数据平台处理系统</title>
+      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/</link>
+      <pubDate>Wed, 26 Oct 2016 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/</guid>
+      <description>本文详细记录了作者在某银行大数据平台项目组的经历和对项目架构的理解。</description>
+    </item>
+  </channel>
+</rss>

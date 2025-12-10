@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hippo投资 on Hippo Inv.</title>
+    <link>https://www.hippoinv.com/categories/hippo%E6%8A%95%E8%B5%84/</link>
+    <description>Recent content in Hippo投资 on Hippo Inv.</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; (2023-2025) [Hippo Inv.](https://hippoinv.com)</copyright>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.hippoinv.com/categories/hippo%E6%8A%95%E8%B5%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TB-海龟打板实盘日志</title>
+      <link>https://www.hippoinv.com/hippo/turtle-board-live/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/turtle-board-live/</guid>
+      <description>文章内容为海龟打板策略的实盘日志，包含收益详情、策略评估、交易详情和止盈监控等信息。</description>
+    </item>
+    <item>
+      <title>中证500主力资金流入实况</title>
+      <link>https://www.hippoinv.com/hippo/dynamic-zj-zz500/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/dynamic-zj-zz500/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MR-实盘日志</title>
+      <link>https://www.hippoinv.com/hippo/mr-live/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/mr-live/</guid>
+      <description>文章提供了Mean Reversion策略的实盘日志，包括详细的交易记录以及相关备注。</description>
+    </item>
+    <item>
+      <title>MR-虚拟账单</title>
+      <link>https://www.hippoinv.com/hippo/mrbill/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/mrbill/</guid>
+      <description>文章提供了Mean Reversion策略的虚拟交易账单，包括详细的交易记录和账单参数的解释。</description>
+    </item>
+    <item>
+      <title>MR-信号跟踪</title>
+      <link>https://www.hippoinv.com/hippo/mrtracker/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/mrtracker/</guid>
+      <description>文中详细记录了每日的mean reversion策略信号，包括信号内容、信号说明等。</description>
+    </item>
+  </channel>
+</rss>

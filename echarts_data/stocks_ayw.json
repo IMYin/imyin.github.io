@@ -1,0 +1,102 @@
+{
+    "stocks": {
+        "600141": {
+            "name": "兴发集团",
+            "code": "600141",
+            "profit": -2409.66,
+            "trades": [
+                {
+                    "date": "20250303",
+                    "operation": "证券买入",
+                    "volume": 4500.0,
+                    "average_price": 21.94,
+                    "last_close": 22.2
+                },
+                {
+                    "date": "20250305",
+                    "operation": "证券卖出",
+                    "volume": 4500.0,
+                    "average_price": 21.42,
+                    "last_close": 22.2
+                }
+            ]
+        },
+        "600765": {
+            "name": "中航重机",
+            "code": "600765",
+            "profit": 3387.48,
+            "trades": [
+                {
+                    "date": "20250304",
+                    "operation": "证券买入",
+                    "volume": 4000.0,
+                    "average_price": 17.51,
+                    "last_close": 18.54
+                },
+                {
+                    "date": "20250310",
+                    "operation": "证券卖出",
+                    "volume": 4000.0,
+                    "average_price": 18.37,
+                    "last_close": 18.54
+                }
+            ]
+        },
+        "600859": {
+            "name": "王府井",
+            "code": "600859",
+            "profit": -535.54,
+            "trades": [
+                {
+                    "date": "20250305",
+                    "operation": "证券买入",
+                    "volume": 5000.0,
+                    "average_price": 13.94,
+                    "last_close": 13.92
+                },
+                {
+                    "date": "20250306",
+                    "operation": "证券买入",
+                    "volume": 5000.0,
+                    "average_price": 13.84,
+                    "last_close": 13.92
+                },
+                {
+                    "date": "20250310",
+                    "operation": "证券卖出",
+                    "volume": 2500.0,
+                    "average_price": 13.76,
+                    "last_close": 13.92
+                },
+                {
+                    "date": "20250310",
+                    "operation": "证券卖出",
+                    "volume": 2100.0,
+                    "average_price": 13.74,
+                    "last_close": 13.92
+                }
+            ]
+        },
+        "600970": {
+            "name": "中材国际",
+            "code": "600970",
+            "profit": 539.95,
+            "trades": [
+                {
+                    "date": "20250228",
+                    "operation": "证券买入",
+                    "volume": 10200.0,
+                    "average_price": 9.76,
+                    "last_close": 9.69
+                },
+                {
+                    "date": "20250306",
+                    "operation": "证券卖出",
+                    "volume": 10200.0,
+                    "average_price": 9.82,
+                    "last_close": 9.69
+                }
+            ]
+        }
+    }
+}
