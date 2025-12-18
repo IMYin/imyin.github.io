@@ -10,35 +10,35 @@
                     "transaction_type": "Buy",
                     "volume": 28000.0,
                     "trade_price": 5.67,
-                    "last_close": 4.96
+                    "last_close": 4.94
                 },
                 {
                     "date": "20250709",
                     "transaction_type": "Sell",
                     "volume": 28000.0,
                     "trade_price": 6.013,
-                    "last_close": 4.96
+                    "last_close": 4.94
                 },
                 {
                     "date": "20250710",
                     "transaction_type": "Buy",
                     "volume": 26300.0,
                     "trade_price": 6.85,
-                    "last_close": 4.96
+                    "last_close": 4.94
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 13100.0,
                     "trade_price": 7.14,
-                    "last_close": 4.96
+                    "last_close": 4.94
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 13200.0,
                     "trade_price": 6.63,
-                    "last_close": 4.96
+                    "last_close": 4.94
                 }
             ]
         },
@@ -52,14 +52,14 @@
                     "transaction_type": "Buy",
                     "volume": 13200.0,
                     "trade_price": 14.6,
-                    "last_close": 10.72
+                    "last_close": 11.01
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 13200.0,
                     "trade_price": 13.717,
-                    "last_close": 10.72
+                    "last_close": 11.01
                 }
             ]
         },
@@ -73,14 +73,14 @@
                     "transaction_type": "Buy",
                     "volume": 23600.0,
                     "trade_price": 6.73,
-                    "last_close": 4.82
+                    "last_close": 4.83
                 },
                 {
                     "date": "20250709",
                     "transaction_type": "Sell",
                     "volume": 23600.0,
                     "trade_price": 6.5,
-                    "last_close": 4.82
+                    "last_close": 4.83
                 }
             ]
         },
@@ -94,21 +94,21 @@
                     "transaction_type": "Buy",
                     "volume": 18500.0,
                     "trade_price": 9.76,
-                    "last_close": 8.76
+                    "last_close": 8.79
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 9200.0,
                     "trade_price": 10.75,
-                    "last_close": 8.76
+                    "last_close": 8.79
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 9300.0,
                     "trade_price": 9.55,
-                    "last_close": 8.76
+                    "last_close": 8.79
                 }
             ]
         },
@@ -122,14 +122,14 @@
                     "transaction_type": "Buy",
                     "volume": 33800.0,
                     "trade_price": 6.644,
-                    "last_close": 5.98
+                    "last_close": 6.05
                 },
                 {
                     "date": "20250722",
                     "transaction_type": "Sell",
                     "volume": 33800.0,
                     "trade_price": 6.18,
-                    "last_close": 5.98
+                    "last_close": 6.05
                 }
             ]
         },
@@ -143,28 +143,28 @@
                     "transaction_type": "Buy",
                     "volume": 8600.0,
                     "trade_price": 4.63,
-                    "last_close": 6.87
+                    "last_close": 6.88
                 },
                 {
                     "date": "20250625",
                     "transaction_type": "Sell",
                     "volume": 8600.0,
                     "trade_price": 4.31,
-                    "last_close": 6.87
+                    "last_close": 6.88
                 },
                 {
                     "date": "20250710",
                     "transaction_type": "Buy",
                     "volume": 31600.0,
                     "trade_price": 5.577,
-                    "last_close": 6.87
+                    "last_close": 6.88
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 31600.0,
                     "trade_price": 6.26,
-                    "last_close": 6.87
+                    "last_close": 6.88
                 }
             ]
         },
@@ -178,14 +178,14 @@
                     "transaction_type": "Buy",
                     "volume": 12700.0,
                     "trade_price": 12.55,
-                    "last_close": 11.75
+                    "last_close": 11.78
                 },
                 {
                     "date": "20250709",
                     "transaction_type": "Sell",
                     "volume": 12700.0,
                     "trade_price": 13.228,
-                    "last_close": 11.75
+                    "last_close": 11.78
                 }
             ]
         },
@@ -199,14 +199,14 @@
                     "transaction_type": "Buy",
                     "volume": 15700.0,
                     "trade_price": 14.16,
-                    "last_close": 12.7
+                    "last_close": 12.52
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 15700.0,
                     "trade_price": 12.326,
-                    "last_close": 12.7
+                    "last_close": 12.52
                 }
             ]
         },
@@ -220,14 +220,14 @@
                     "transaction_type": "Buy",
                     "volume": 15800.0,
                     "trade_price": 14.05,
-                    "last_close": 20.8
+                    "last_close": 21.25
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 15800.0,
                     "trade_price": 12.394,
-                    "last_close": 20.8
+                    "last_close": 21.25
                 }
             ]
         },
@@ -241,28 +241,28 @@
                     "transaction_type": "Buy",
                     "volume": 1800.0,
                     "trade_price": 26.81,
-                    "last_close": 29.14
+                    "last_close": 29.19
                 },
                 {
                     "date": "20250627",
                     "transaction_type": "Sell",
                     "volume": 1800.0,
                     "trade_price": 29.01,
-                    "last_close": 29.14
+                    "last_close": 29.19
                 },
                 {
                     "date": "20250630",
                     "transaction_type": "Buy",
                     "volume": 2300.0,
                     "trade_price": 32.44,
-                    "last_close": 29.14
+                    "last_close": 29.19
                 },
                 {
                     "date": "20250701",
                     "transaction_type": "Sell",
                     "volume": 2300.0,
                     "trade_price": 35.68,
-                    "last_close": 29.14
+                    "last_close": 29.19
                 }
             ]
         },
@@ -276,14 +276,14 @@
                     "transaction_type": "Buy",
                     "volume": 3900.0,
                     "trade_price": 59.74,
-                    "last_close": 47.95
+                    "last_close": 47.64
                 },
                 {
                     "date": "20250721",
                     "transaction_type": "Sell",
                     "volume": 3900.0,
                     "trade_price": 53.9,
-                    "last_close": 47.95
+                    "last_close": 47.64
                 }
             ]
         },
@@ -297,14 +297,14 @@
                     "transaction_type": "Buy",
                     "volume": 10000.0,
                     "trade_price": 22.36,
-                    "last_close": 20.9
+                    "last_close": 20.33
                 },
                 {
                     "date": "20250723",
                     "transaction_type": "Sell",
                     "volume": 10000.0,
                     "trade_price": 23.8,
-                    "last_close": 20.9
+                    "last_close": 20.33
                 }
             ]
         },
@@ -318,14 +318,14 @@
                     "transaction_type": "Buy",
                     "volume": 12400.0,
                     "trade_price": 15.61,
-                    "last_close": 9.39
+                    "last_close": 9.45
                 },
                 {
                     "date": "20250728",
                     "transaction_type": "Sell",
                     "volume": 12400.0,
                     "trade_price": 15.319,
-                    "last_close": 9.39
+                    "last_close": 9.45
                 }
             ]
         },
@@ -339,14 +339,14 @@
                     "transaction_type": "Buy",
                     "volume": 9700.0,
                     "trade_price": 14.29,
-                    "last_close": 11.54
+                    "last_close": 11.35
                 },
                 {
                     "date": "20250707",
                     "transaction_type": "Sell",
                     "volume": 9700.0,
                     "trade_price": 14.16,
-                    "last_close": 11.54
+                    "last_close": 11.35
                 }
             ]
         },
@@ -360,14 +360,14 @@
                     "transaction_type": "Buy",
                     "volume": 2700.0,
                     "trade_price": 14.68,
-                    "last_close": 13.21
+                    "last_close": 13.42
                 },
                 {
                     "date": "20250626",
                     "transaction_type": "Sell",
                     "volume": 2700.0,
                     "trade_price": 16.81,
-                    "last_close": 13.21
+                    "last_close": 13.42
                 }
             ]
         },
@@ -381,14 +381,14 @@
                     "transaction_type": "Buy",
                     "volume": 17300.0,
                     "trade_price": 12.96,
-                    "last_close": 11.99
+                    "last_close": 11.88
                 },
                 {
                     "date": "20250722",
                     "transaction_type": "Sell",
                     "volume": 17300.0,
                     "trade_price": 12.449,
-                    "last_close": 11.99
+                    "last_close": 11.88
                 }
             ]
         },
@@ -402,14 +402,14 @@
                     "transaction_type": "Buy",
                     "volume": 30400.0,
                     "trade_price": 7.79,
-                    "last_close": 6.29
+                    "last_close": 6.38
                 },
                 {
                     "date": "20250723",
                     "transaction_type": "Sell",
                     "volume": 30400.0,
                     "trade_price": 6.838,
-                    "last_close": 6.29
+                    "last_close": 6.38
                 }
             ]
         },
@@ -423,21 +423,21 @@
                     "transaction_type": "Buy",
                     "volume": 12400.0,
                     "trade_price": 15.27,
-                    "last_close": 15.14
+                    "last_close": 15.04
                 },
                 {
                     "date": "20250715",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 16.79,
-                    "last_close": 15.14
+                    "last_close": 15.04
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 18.54,
-                    "last_close": 15.14
+                    "last_close": 15.04
                 }
             ]
         },
@@ -451,14 +451,14 @@
                     "transaction_type": "Buy",
                     "volume": 17100.0,
                     "trade_price": 2.57,
-                    "last_close": 3.11
+                    "last_close": 3.06
                 },
                 {
                     "date": "20250627",
                     "transaction_type": "Sell",
                     "volume": 17100.0,
                     "trade_price": 2.77,
-                    "last_close": 3.11
+                    "last_close": 3.06
                 }
             ]
         },
@@ -472,14 +472,14 @@
                     "transaction_type": "Buy",
                     "volume": 40300.0,
                     "trade_price": 4.44,
-                    "last_close": 4.21
+                    "last_close": 4.23
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 40300.0,
                     "trade_price": 4.71,
-                    "last_close": 4.21
+                    "last_close": 4.23
                 }
             ]
         },
@@ -493,14 +493,14 @@
                     "transaction_type": "Buy",
                     "volume": 11200.0,
                     "trade_price": 17.292,
-                    "last_close": 32.32
+                    "last_close": 31.96
                 },
                 {
                     "date": "20250728",
                     "transaction_type": "Sell",
                     "volume": 11200.0,
                     "trade_price": 16.39,
-                    "last_close": 32.32
+                    "last_close": 31.96
                 }
             ]
         },
@@ -514,14 +514,14 @@
                     "transaction_type": "Buy",
                     "volume": 5400.0,
                     "trade_price": 15.98,
-                    "last_close": 16.46
+                    "last_close": 16.39
                 },
                 {
                     "date": "20250702",
                     "transaction_type": "Sell",
                     "volume": 5400.0,
                     "trade_price": 14.62,
-                    "last_close": 16.46
+                    "last_close": 16.39
                 }
             ]
         },
@@ -556,28 +556,28 @@
                     "transaction_type": "Buy",
                     "volume": 1700.0,
                     "trade_price": 28.658,
-                    "last_close": 25.61
+                    "last_close": 25.39
                 },
                 {
                     "date": "20250627",
                     "transaction_type": "Sell",
                     "volume": 1700.0,
                     "trade_price": 28.12,
-                    "last_close": 25.61
+                    "last_close": 25.39
                 },
                 {
                     "date": "20250718",
                     "transaction_type": "Buy",
                     "volume": 7000.0,
                     "trade_price": 33.62,
-                    "last_close": 25.61
+                    "last_close": 25.39
                 },
                 {
                     "date": "20250721",
                     "transaction_type": "Sell",
                     "volume": 7000.0,
                     "trade_price": 35.84,
-                    "last_close": 25.61
+                    "last_close": 25.39
                 }
             ]
         },
@@ -591,14 +591,14 @@
                     "transaction_type": "Buy",
                     "volume": 37900.0,
                     "trade_price": 3.17,
-                    "last_close": 2.86
+                    "last_close": 2.85
                 },
                 {
                     "date": "20250704",
                     "transaction_type": "Sell",
                     "volume": 37900.0,
                     "trade_price": 2.91,
-                    "last_close": 2.86
+                    "last_close": 2.85
                 }
             ]
         },
@@ -612,14 +612,14 @@
                     "transaction_type": "Buy",
                     "volume": 48800.0,
                     "trade_price": 3.699,
-                    "last_close": 4.05
+                    "last_close": 4.01
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 48800.0,
                     "trade_price": 3.971,
-                    "last_close": 4.05
+                    "last_close": 4.01
                 }
             ]
         },
@@ -633,14 +633,14 @@
                     "transaction_type": "Buy",
                     "volume": 14800.0,
                     "trade_price": 6.716,
-                    "last_close": 7.04
+                    "last_close": 6.99
                 },
                 {
                     "date": "20250730",
                     "transaction_type": "Sell",
                     "volume": 14800.0,
                     "trade_price": 7.4,
-                    "last_close": 7.04
+                    "last_close": 6.99
                 }
             ]
         },
@@ -654,21 +654,21 @@
                     "transaction_type": "Buy",
                     "volume": 8400.0,
                     "trade_price": 23.88,
-                    "last_close": 19.96
+                    "last_close": 20.45
                 },
                 {
                     "date": "20250717",
                     "transaction_type": "Sell",
                     "volume": 4200.0,
                     "trade_price": 26.27,
-                    "last_close": 19.96
+                    "last_close": 20.45
                 },
                 {
                     "date": "20250721",
                     "transaction_type": "Sell",
                     "volume": 4200.0,
                     "trade_price": 26.876,
-                    "last_close": 19.96
+                    "last_close": 20.45
                 }
             ]
         },
@@ -682,14 +682,14 @@
                     "transaction_type": "Buy",
                     "volume": 19000.0,
                     "trade_price": 10.65,
-                    "last_close": 13.39
+                    "last_close": 13.51
                 },
                 {
                     "date": "20250717",
                     "transaction_type": "Sell",
                     "volume": 19000.0,
                     "trade_price": 11.74,
-                    "last_close": 13.39
+                    "last_close": 13.51
                 }
             ]
         },
@@ -703,14 +703,14 @@
                     "transaction_type": "Buy",
                     "volume": 22300.0,
                     "trade_price": 7.41,
-                    "last_close": 5.89
+                    "last_close": 5.93
                 },
                 {
                     "date": "20250710",
                     "transaction_type": "Sell",
                     "volume": 22300.0,
                     "trade_price": 7.04,
-                    "last_close": 5.89
+                    "last_close": 5.93
                 }
             ]
         },
@@ -724,14 +724,14 @@
                     "transaction_type": "Buy",
                     "volume": 14400.0,
                     "trade_price": 15.33,
-                    "last_close": 16.99
+                    "last_close": 16.25
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 14400.0,
                     "trade_price": 13.21,
-                    "last_close": 16.99
+                    "last_close": 16.25
                 }
             ]
         },
@@ -745,14 +745,14 @@
                     "transaction_type": "Buy",
                     "volume": 8700.0,
                     "trade_price": 13.6,
-                    "last_close": 20.21
+                    "last_close": 21.77
                 },
                 {
                     "date": "20250704",
                     "transaction_type": "Sell",
                     "volume": 8700.0,
                     "trade_price": 12.3,
-                    "last_close": 20.21
+                    "last_close": 21.77
                 }
             ]
         },
@@ -766,14 +766,14 @@
                     "transaction_type": "Buy",
                     "volume": 37000.0,
                     "trade_price": 6.08,
-                    "last_close": 4.04
+                    "last_close": 4.06
                 },
                 {
                     "date": "20250723",
                     "transaction_type": "Sell",
                     "volume": 37000.0,
                     "trade_price": 5.474,
-                    "last_close": 4.04
+                    "last_close": 4.06
                 }
             ]
         },
@@ -787,14 +787,14 @@
                     "transaction_type": "Buy",
                     "volume": 11600.0,
                     "trade_price": 13.7,
-                    "last_close": 15.94
+                    "last_close": 15.16
                 },
                 {
                     "date": "20250710",
                     "transaction_type": "Sell",
                     "volume": 11600.0,
                     "trade_price": 16.59,
-                    "last_close": 15.94
+                    "last_close": 15.16
                 }
             ]
         },
@@ -808,14 +808,14 @@
                     "transaction_type": "Buy",
                     "volume": 30100.0,
                     "trade_price": 5.98,
-                    "last_close": 4.34
+                    "last_close": 4.31
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 30100.0,
                     "trade_price": 5.71,
-                    "last_close": 4.34
+                    "last_close": 4.31
                 }
             ]
         },
@@ -829,14 +829,14 @@
                     "transaction_type": "Buy",
                     "volume": 16400.0,
                     "trade_price": 11.5,
-                    "last_close": 14.39
+                    "last_close": 14.28
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 16400.0,
                     "trade_price": 13.285,
-                    "last_close": 14.39
+                    "last_close": 14.28
                 }
             ]
         },
@@ -850,14 +850,14 @@
                     "transaction_type": "Buy",
                     "volume": 39100.0,
                     "trade_price": 4.85,
-                    "last_close": 6.31
+                    "last_close": 6.25
                 },
                 {
                     "date": "20250715",
                     "transaction_type": "Sell",
                     "volume": 39100.0,
                     "trade_price": 4.684,
-                    "last_close": 6.31
+                    "last_close": 6.25
                 }
             ]
         },
@@ -871,14 +871,14 @@
                     "transaction_type": "Buy",
                     "volume": 12600.0,
                     "trade_price": 9.5,
-                    "last_close": 6.64
+                    "last_close": 6.73
                 },
                 {
                     "date": "20250704",
                     "transaction_type": "Sell",
                     "volume": 12600.0,
                     "trade_price": 8.36,
-                    "last_close": 6.64
+                    "last_close": 6.73
                 }
             ]
         },
@@ -892,14 +892,14 @@
                     "transaction_type": "Buy",
                     "volume": 18400.0,
                     "trade_price": 12.06,
-                    "last_close": 8.88
+                    "last_close": 8.93
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 18400.0,
                     "trade_price": 10.8,
-                    "last_close": 8.88
+                    "last_close": 8.93
                 }
             ]
         },
@@ -913,14 +913,14 @@
                     "transaction_type": "Buy",
                     "volume": 2400.0,
                     "trade_price": 16.35,
-                    "last_close": 15.59
+                    "last_close": 15.39
                 },
                 {
                     "date": "20250625",
                     "transaction_type": "Sell",
                     "volume": 2400.0,
                     "trade_price": 18.04,
-                    "last_close": 15.59
+                    "last_close": 15.39
                 }
             ]
         },
@@ -934,14 +934,14 @@
                     "transaction_type": "Buy",
                     "volume": 2800.0,
                     "trade_price": 67.396,
-                    "last_close": 80.11
+                    "last_close": 78.57
                 },
                 {
                     "date": "20250715",
                     "transaction_type": "Sell",
                     "volume": 2800.0,
                     "trade_price": 67.67,
-                    "last_close": 80.11
+                    "last_close": 78.57
                 }
             ]
         },
@@ -955,14 +955,14 @@
                     "transaction_type": "Buy",
                     "volume": 12800.0,
                     "trade_price": 11.71,
-                    "last_close": 9.21
+                    "last_close": 9.26
                 },
                 {
                     "date": "20250708",
                     "transaction_type": "Sell",
                     "volume": 12800.0,
                     "trade_price": 11.16,
-                    "last_close": 9.21
+                    "last_close": 9.26
                 }
             ]
         },
@@ -976,14 +976,14 @@
                     "transaction_type": "Buy",
                     "volume": 6600.0,
                     "trade_price": 28.69,
-                    "last_close": 28.37
+                    "last_close": 28.56
                 },
                 {
                     "date": "20250715",
                     "transaction_type": "Sell",
                     "volume": 6600.0,
                     "trade_price": 25.857,
-                    "last_close": 28.37
+                    "last_close": 28.56
                 }
             ]
         },
@@ -997,21 +997,21 @@
                     "transaction_type": "Buy",
                     "volume": 13300.0,
                     "trade_price": 16.9,
-                    "last_close": 12.74
+                    "last_close": 12.9
                 },
                 {
                     "date": "20250723",
                     "transaction_type": "Sell",
                     "volume": 6600.0,
                     "trade_price": 18.75,
-                    "last_close": 12.74
+                    "last_close": 12.9
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 6700.0,
                     "trade_price": 15.881,
-                    "last_close": 12.74
+                    "last_close": 12.9
                 }
             ]
         },
@@ -1025,14 +1025,14 @@
                     "transaction_type": "Buy",
                     "volume": 9500.0,
                     "trade_price": 17.29,
-                    "last_close": 13.0
+                    "last_close": 13.1
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 9500.0,
                     "trade_price": 17.27,
-                    "last_close": 13.0
+                    "last_close": 13.1
                 }
             ]
         },
@@ -1046,14 +1046,14 @@
                     "transaction_type": "Buy",
                     "volume": 21900.0,
                     "trade_price": 9.45,
-                    "last_close": 7.32
+                    "last_close": 7.41
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 21900.0,
                     "trade_price": 9.95,
-                    "last_close": 7.32
+                    "last_close": 7.41
                 }
             ]
         },
@@ -1067,14 +1067,14 @@
                     "transaction_type": "Buy",
                     "volume": 6600.0,
                     "trade_price": 25.04,
-                    "last_close": 19.12
+                    "last_close": 19.46
                 },
                 {
                     "date": "20250710",
                     "transaction_type": "Sell",
                     "volume": 6600.0,
                     "trade_price": 24.434,
-                    "last_close": 19.12
+                    "last_close": 19.46
                 }
             ]
         },
@@ -1088,14 +1088,14 @@
                     "transaction_type": "Buy",
                     "volume": 9600.0,
                     "trade_price": 10.35,
-                    "last_close": 9.82
+                    "last_close": 9.47
                 },
                 {
                     "date": "20250703",
                     "transaction_type": "Sell",
                     "volume": 9600.0,
                     "trade_price": 11.28,
-                    "last_close": 9.82
+                    "last_close": 9.47
                 }
             ]
         },
@@ -1109,14 +1109,14 @@
                     "transaction_type": "Buy",
                     "volume": 24800.0,
                     "trade_price": 9.45,
-                    "last_close": 15.28
+                    "last_close": 15.21
                 },
                 {
                     "date": "20250718",
                     "transaction_type": "Sell",
                     "volume": 24800.0,
                     "trade_price": 9.0,
-                    "last_close": 15.28
+                    "last_close": 15.21
                 }
             ]
         },
@@ -1130,21 +1130,21 @@
                     "transaction_type": "Buy",
                     "volume": 17200.0,
                     "trade_price": 13.74,
-                    "last_close": 12.89
+                    "last_close": 12.94
                 },
                 {
                     "date": "20250721",
                     "transaction_type": "Sell",
                     "volume": 8600.0,
                     "trade_price": 15.12,
-                    "last_close": 12.89
+                    "last_close": 12.94
                 },
                 {
                     "date": "20250722",
                     "transaction_type": "Sell",
                     "volume": 8600.0,
                     "trade_price": 15.461,
-                    "last_close": 12.89
+                    "last_close": 12.94
                 }
             ]
         },
@@ -1158,14 +1158,14 @@
                     "transaction_type": "Buy",
                     "volume": 6200.0,
                     "trade_price": 9.67,
-                    "last_close": 8.27
+                    "last_close": 8.31
                 },
                 {
                     "date": "20250630",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 10.45,
-                    "last_close": 8.27
+                    "last_close": 8.31
                 }
             ]
         },
@@ -1179,28 +1179,28 @@
                     "transaction_type": "Buy",
                     "volume": 21400.0,
                     "trade_price": 9.668,
-                    "last_close": 10.55
+                    "last_close": 10.21
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 21400.0,
                     "trade_price": 8.749,
-                    "last_close": 10.55
+                    "last_close": 10.21
                 },
                 {
                     "date": "20250723",
                     "transaction_type": "Buy",
                     "volume": 18600.0,
                     "trade_price": 11.9,
-                    "last_close": 10.55
+                    "last_close": 10.21
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 18600.0,
                     "trade_price": 9.897,
-                    "last_close": 10.55
+                    "last_close": 10.21
                 }
             ]
         },
@@ -1214,14 +1214,14 @@
                     "transaction_type": "Buy",
                     "volume": 12600.0,
                     "trade_price": 7.9,
-                    "last_close": 8.89
+                    "last_close": 8.92
                 },
                 {
                     "date": "20250703",
                     "transaction_type": "Sell",
                     "volume": 12600.0,
                     "trade_price": 8.02,
-                    "last_close": 8.89
+                    "last_close": 8.92
                 }
             ]
         },
@@ -1256,14 +1256,14 @@
                     "transaction_type": "Buy",
                     "volume": 5100.0,
                     "trade_price": 19.75,
-                    "last_close": 17.64
+                    "last_close": 17.69
                 },
                 {
                     "date": "20250730",
                     "transaction_type": "Sell",
                     "volume": 5100.0,
                     "trade_price": 18.33,
-                    "last_close": 17.64
+                    "last_close": 17.69
                 }
             ]
         },
@@ -1277,14 +1277,14 @@
                     "transaction_type": "Buy",
                     "volume": 7400.0,
                     "trade_price": 20.39,
-                    "last_close": 15.26
+                    "last_close": 15.04
                 },
                 {
                     "date": "20250708",
                     "transaction_type": "Sell",
                     "volume": 7400.0,
                     "trade_price": 19.95,
-                    "last_close": 15.26
+                    "last_close": 15.04
                 }
             ]
         },
@@ -1298,14 +1298,14 @@
                     "transaction_type": "Buy",
                     "volume": 30300.0,
                     "trade_price": 6.83,
-                    "last_close": 5.36
+                    "last_close": 5.34
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 30300.0,
                     "trade_price": 7.29,
-                    "last_close": 5.36
+                    "last_close": 5.34
                 }
             ]
         },
@@ -1319,14 +1319,14 @@
                     "transaction_type": "Buy",
                     "volume": 53200.0,
                     "trade_price": 3.64,
-                    "last_close": 2.88
+                    "last_close": 2.87
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 53200.0,
                     "trade_price": 3.36,
-                    "last_close": 2.88
+                    "last_close": 2.87
                 }
             ]
         },
@@ -1340,14 +1340,14 @@
                     "transaction_type": "Buy",
                     "volume": 20400.0,
                     "trade_price": 3.76,
-                    "last_close": 3.25
+                    "last_close": 3.22
                 },
                 {
                     "date": "20250701",
                     "transaction_type": "Sell",
                     "volume": 20400.0,
                     "trade_price": 3.27,
-                    "last_close": 3.25
+                    "last_close": 3.22
                 }
             ]
         },
@@ -1361,14 +1361,14 @@
                     "transaction_type": "Buy",
                     "volume": 17400.0,
                     "trade_price": 12.78,
-                    "last_close": 13.66
+                    "last_close": 12.96
                 },
                 {
                     "date": "20250724",
                     "transaction_type": "Sell",
                     "volume": 17400.0,
                     "trade_price": 10.38,
-                    "last_close": 13.66
+                    "last_close": 12.96
                 }
             ]
         },
@@ -1382,14 +1382,14 @@
                     "transaction_type": "Buy",
                     "volume": 23000.0,
                     "trade_price": 6.05,
-                    "last_close": 5.93
+                    "last_close": 5.89
                 },
                 {
                     "date": "20250707",
                     "transaction_type": "Sell",
                     "volume": 23000.0,
                     "trade_price": 6.66,
-                    "last_close": 5.93
+                    "last_close": 5.89
                 }
             ]
         },
@@ -1403,14 +1403,14 @@
                     "transaction_type": "Buy",
                     "volume": 14600.0,
                     "trade_price": 15.98,
-                    "last_close": 10.42
+                    "last_close": 10.61
                 },
                 {
                     "date": "20250718",
                     "transaction_type": "Sell",
                     "volume": 14600.0,
                     "trade_price": 14.5,
-                    "last_close": 10.42
+                    "last_close": 10.61
                 }
             ]
         },
@@ -1424,14 +1424,14 @@
                     "transaction_type": "Buy",
                     "volume": 17800.0,
                     "trade_price": 13.17,
-                    "last_close": 10.5
+                    "last_close": 10.51
                 },
                 {
                     "date": "20250718",
                     "transaction_type": "Sell",
                     "volume": 17800.0,
                     "trade_price": 14.2,
-                    "last_close": 10.5
+                    "last_close": 10.51
                 }
             ]
         },
@@ -1445,14 +1445,14 @@
                     "transaction_type": "Buy",
                     "volume": 9300.0,
                     "trade_price": 12.88,
-                    "last_close": 9.64
+                    "last_close": 9.73
                 },
                 {
                     "date": "20250704",
                     "transaction_type": "Sell",
                     "volume": 9300.0,
                     "trade_price": 12.652,
-                    "last_close": 9.64
+                    "last_close": 9.73
                 }
             ]
         },
@@ -1487,14 +1487,14 @@
                     "transaction_type": "Buy",
                     "volume": 25700.0,
                     "trade_price": 4.647,
-                    "last_close": 4.91
+                    "last_close": 4.93
                 },
                 {
                     "date": "20250707",
                     "transaction_type": "Sell",
                     "volume": 25700.0,
                     "trade_price": 4.758,
-                    "last_close": 4.91
+                    "last_close": 4.93
                 }
             ]
         },
@@ -1508,14 +1508,14 @@
                     "transaction_type": "Buy",
                     "volume": 4000.0,
                     "trade_price": 25.158,
-                    "last_close": 23.21
+                    "last_close": 23.03
                 },
                 {
                     "date": "20250801",
                     "transaction_type": "Sell",
                     "volume": 4000.0,
                     "trade_price": 26.54,
-                    "last_close": 23.21
+                    "last_close": 23.03
                 }
             ]
         },
@@ -1529,14 +1529,14 @@
                     "transaction_type": "Buy",
                     "volume": 19200.0,
                     "trade_price": 4.52,
-                    "last_close": 4.96
+                    "last_close": 4.93
                 },
                 {
                     "date": "20250702",
                     "transaction_type": "Sell",
                     "volume": 19200.0,
                     "trade_price": 4.97,
-                    "last_close": 4.96
+                    "last_close": 4.93
                 }
             ]
         },
@@ -1550,35 +1550,35 @@
                     "transaction_type": "Buy",
                     "volume": 45400.0,
                     "trade_price": 5.189,
-                    "last_close": 5.18
+                    "last_close": 5.08
                 },
                 {
                     "date": "20250721",
                     "transaction_type": "Sell",
                     "volume": 45400.0,
                     "trade_price": 4.23,
-                    "last_close": 5.18
+                    "last_close": 5.08
                 }
             ]
         },
         "601399": {
             "name": "国机重装",
             "code": "601399",
-            "profit": -958836.86,
+            "profit": -963176.86,
             "trades": [
                 {
                     "date": "20251204",
                     "transaction_type": "Buy",
                     "volume": 21700.0,
                     "trade_price": 27.41,
-                    "last_close": 5.32
+                    "last_close": 5.22
                 },
                 {
                     "date": "20251204",
                     "transaction_type": "Buy",
                     "volume": 21700.0,
                     "trade_price": 27.41,
-                    "last_close": 5.32
+                    "last_close": 5.22
                 }
             ]
         },
@@ -1592,14 +1592,14 @@
                     "transaction_type": "Buy",
                     "volume": 24400.0,
                     "trade_price": 8.48,
-                    "last_close": 8.5
+                    "last_close": 8.41
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 24400.0,
                     "trade_price": 8.19,
-                    "last_close": 8.5
+                    "last_close": 8.41
                 }
             ]
         },
@@ -1613,14 +1613,14 @@
                     "transaction_type": "Buy",
                     "volume": 8900.0,
                     "trade_price": 23.19,
-                    "last_close": 21.38
+                    "last_close": 21.78
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 8900.0,
                     "trade_price": 21.4,
-                    "last_close": 21.38
+                    "last_close": 21.78
                 }
             ]
         },
@@ -1634,14 +1634,14 @@
                     "transaction_type": "Buy",
                     "volume": 12000.0,
                     "trade_price": 19.64,
-                    "last_close": 18.05
+                    "last_close": 18.15
                 },
                 {
                     "date": "20250721",
                     "transaction_type": "Sell",
                     "volume": 12000.0,
                     "trade_price": 17.878,
-                    "last_close": 18.05
+                    "last_close": 18.15
                 }
             ]
         },
@@ -1655,14 +1655,14 @@
                     "transaction_type": "Buy",
                     "volume": 3300.0,
                     "trade_price": 13.15,
-                    "last_close": 13.93
+                    "last_close": 14.0
                 },
                 {
                     "date": "20250626",
                     "transaction_type": "Sell",
                     "volume": 3300.0,
                     "trade_price": 12.091,
-                    "last_close": 13.93
+                    "last_close": 14.0
                 }
             ]
         },
@@ -1676,28 +1676,28 @@
                     "transaction_type": "Buy",
                     "volume": 9200.0,
                     "trade_price": 10.88,
-                    "last_close": 14.3
+                    "last_close": 14.44
                 },
                 {
                     "date": "20250703",
                     "transaction_type": "Buy",
                     "volume": 10000.0,
                     "trade_price": 11.609,
-                    "last_close": 14.3
+                    "last_close": 14.44
                 },
                 {
                     "date": "20250703",
                     "transaction_type": "Sell",
                     "volume": 9200.0,
                     "trade_price": 11.53,
-                    "last_close": 14.3
+                    "last_close": 14.44
                 },
                 {
                     "date": "20250704",
                     "transaction_type": "Sell",
                     "volume": 10000.0,
                     "trade_price": 12.6,
-                    "last_close": 14.3
+                    "last_close": 14.44
                 }
             ]
         },
@@ -1711,14 +1711,14 @@
                     "transaction_type": "Buy",
                     "volume": 6200.0,
                     "trade_price": 16.22,
-                    "last_close": 15.07
+                    "last_close": 15.34
                 },
                 {
                     "date": "20250730",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 14.35,
-                    "last_close": 15.07
+                    "last_close": 15.34
                 }
             ]
         },
@@ -1732,14 +1732,14 @@
                     "transaction_type": "Buy",
                     "volume": 4900.0,
                     "trade_price": 27.696,
-                    "last_close": 19.4
+                    "last_close": 19.39
                 },
                 {
                     "date": "20250707",
                     "transaction_type": "Sell",
                     "volume": 4900.0,
                     "trade_price": 25.58,
-                    "last_close": 19.4
+                    "last_close": 19.39
                 }
             ]
         },
@@ -1753,14 +1753,14 @@
                     "transaction_type": "Buy",
                     "volume": 4300.0,
                     "trade_price": 44.7,
-                    "last_close": 41.72
+                    "last_close": 41.1
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 4300.0,
                     "trade_price": 48.3,
-                    "last_close": 41.72
+                    "last_close": 41.1
                 }
             ]
         },
@@ -1774,28 +1774,28 @@
                     "transaction_type": "Buy",
                     "volume": 5700.0,
                     "trade_price": 17.301,
-                    "last_close": 19.91
+                    "last_close": 21.9
                 },
                 {
                     "date": "20250703",
                     "transaction_type": "Sell",
                     "volume": 5700.0,
                     "trade_price": 18.5,
-                    "last_close": 19.91
+                    "last_close": 21.9
                 },
                 {
                     "date": "20250703",
                     "transaction_type": "Buy",
                     "volume": 6300.0,
                     "trade_price": 19.044,
-                    "last_close": 19.91
+                    "last_close": 21.9
                 },
                 {
                     "date": "20250704",
                     "transaction_type": "Sell",
                     "volume": 6300.0,
                     "trade_price": 21.08,
-                    "last_close": 19.91
+                    "last_close": 21.9
                 }
             ]
         },
@@ -1809,14 +1809,14 @@
                     "transaction_type": "Buy",
                     "volume": 8000.0,
                     "trade_price": 22.54,
-                    "last_close": 20.93
+                    "last_close": 21.48
                 },
                 {
                     "date": "20250711",
                     "transaction_type": "Sell",
                     "volume": 8000.0,
                     "trade_price": 19.11,
-                    "last_close": 20.93
+                    "last_close": 21.48
                 }
             ]
         },
@@ -1830,14 +1830,14 @@
                     "transaction_type": "Buy",
                     "volume": 38800.0,
                     "trade_price": 4.99,
-                    "last_close": 12.73
+                    "last_close": 12.35
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 38800.0,
                     "trade_price": 5.319,
-                    "last_close": 12.73
+                    "last_close": 12.35
                 }
             ]
         },
@@ -1851,14 +1851,14 @@
                     "transaction_type": "Buy",
                     "volume": 13700.0,
                     "trade_price": 14.12,
-                    "last_close": 12.21
+                    "last_close": 12.37
                 },
                 {
                     "date": "20250714",
                     "transaction_type": "Sell",
                     "volume": 13700.0,
                     "trade_price": 13.613,
-                    "last_close": 12.21
+                    "last_close": 12.37
                 }
             ]
         },
@@ -1872,14 +1872,14 @@
                     "transaction_type": "Buy",
                     "volume": 2700.0,
                     "trade_price": 16.21,
-                    "last_close": 19.42
+                    "last_close": 18.71
                 },
                 {
                     "date": "20250626",
                     "transaction_type": "Sell",
                     "volume": 2700.0,
                     "trade_price": 16.578,
-                    "last_close": 19.42
+                    "last_close": 18.71
                 }
             ]
         },
@@ -1893,14 +1893,14 @@
                     "transaction_type": "Buy",
                     "volume": 17500.0,
                     "trade_price": 9.35,
-                    "last_close": 7.07
+                    "last_close": 6.97
                 },
                 {
                     "date": "20250710",
                     "transaction_type": "Sell",
                     "volume": 17500.0,
                     "trade_price": 8.936,
-                    "last_close": 7.07
+                    "last_close": 6.97
                 }
             ]
         },
@@ -1914,14 +1914,14 @@
                     "transaction_type": "Buy",
                     "volume": 16100.0,
                     "trade_price": 9.39,
-                    "last_close": 8.5
+                    "last_close": 8.51
                 },
                 {
                     "date": "20250708",
                     "transaction_type": "Sell",
                     "volume": 16100.0,
                     "trade_price": 10.33,
-                    "last_close": 8.5
+                    "last_close": 8.51
                 }
             ]
         },
@@ -1935,21 +1935,21 @@
                     "transaction_type": "Buy",
                     "volume": 7800.0,
                     "trade_price": 26.46,
-                    "last_close": 20.92
+                    "last_close": 21.02
                 },
                 {
                     "date": "20250716",
                     "transaction_type": "Sell",
                     "volume": 3900.0,
                     "trade_price": 29.12,
-                    "last_close": 20.92
+                    "last_close": 21.02
                 },
                 {
                     "date": "20250717",
                     "transaction_type": "Sell",
                     "volume": 3900.0,
                     "trade_price": 24.8,
-                    "last_close": 20.92
+                    "last_close": 21.02
                 }
             ]
         }
