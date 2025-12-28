@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; (2023-2025) [Hippo Inv.](https://hippoinv.com)</copyright>
-    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.hippoinv.com/hippo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中证500增强策略虚拟交易日志</title>
+      <link>https://www.hippoinv.com/hippo/csi-500-enhanced-test/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/csi-500-enhanced-test/</guid>
+      <description>文章提供了CSI500增强策略的虚拟交易日志，包括详细的交易记录以及相关备注。</description>
+    </item>
     <item>
       <title>TB-海龟打板实盘日志</title>
       <link>https://www.hippoinv.com/hippo/turtle-board-live/</link>
@@ -28,13 +35,6 @@
       <link>https://www.hippoinv.com/hippo/hedge-live-0a5c57c87e28a2641062c8e09f40b46e/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://www.hippoinv.com/hippo/hedge-live-0a5c57c87e28a2641062c8e09f40b46e/</guid>
-      <description>文章提供了Smart Hedge策略的实盘日志，包括详细的交易记录以及相关备注。</description>
-    </item>
-    <item>
-      <title>SH-实盘日志</title>
-      <link>https://www.hippoinv.com/hippo/hedge-live/</link>
-      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/hippo/hedge-live/</guid>
       <description>文章提供了Smart Hedge策略的实盘日志，包括详细的交易记录以及相关备注。</description>
     </item>
     <item>

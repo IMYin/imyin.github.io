@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; (2023-2025) [Hippo Inv.](https://hippoinv.com)</copyright>
-    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.hippoinv.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中证500增强策略虚拟交易日志</title>
+      <link>https://www.hippoinv.com/hippo/csi-500-enhanced-test/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.hippoinv.com/hippo/csi-500-enhanced-test/</guid>
+      <description>文章提供了CSI500增强策略的虚拟交易日志，包括详细的交易记录以及相关备注。</description>
+    </item>
     <item>
       <title>TB-海龟打板实盘日志</title>
       <link>https://www.hippoinv.com/hippo/turtle-board-live/</link>
@@ -120,13 +127,6 @@
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://www.hippoinv.com/posts/8-year-stock-market-reflection/</guid>
       <description>从第一次完成交易至今，也有8年多的时间了。坦白来讲，想要在股市中挣钱，很难。我理解的难，是可持续性的难。</description>
-    </item>
-    <item>
-      <title>SH-实盘日志</title>
-      <link>https://www.hippoinv.com/hippo/hedge-live/</link>
-      <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/hippo/hedge-live/</guid>
-      <description>文章提供了Smart Hedge策略的实盘日志，包括详细的交易记录以及相关备注。</description>
     </item>
     <item>
       <title>海峡股份(002320)</title>

@@ -587,11 +587,17 @@ abbr[data-title]:not([data-title=""]):hover:after {
         $.getJSON('/' + profitJson, function (profitData) {
             $.getJSON('/' + indexJson, function (indexData) {
 
-                var data4 = profitData.stocks;
-                var data5 = profitData.options;
-                var data6 = indexData.zz500.slice(-data4.length);
-                var data7 = indexData.hs300.slice(-data4.length);
-                var data8 = indexData.sh.slice(-data4.length);
+                var data4 = Array.isArray(profitData) ? profitData : (profitData && profitData.stocks) ? profitData.stocks : [];
+                var data5 = (profitData && Array.isArray(profitData.options)) ? profitData.options : [];
+
+                if (!Array.isArray(data4) || data4.length === 0) {
+                    console.error('Invalid profit data format: expected {stocks:[...]} or [...]', profitData);
+                    return;
+                }
+
+                var data6 = (indexData && Array.isArray(indexData.zz500) ? indexData.zz500 : []).slice(-data4.length);
+                var data7 = (indexData && Array.isArray(indexData.hs300) ? indexData.hs300 : []).slice(-data4.length);
+                var data8 = (indexData && Array.isArray(indexData.sh) ? indexData.sh : []).slice(-data4.length);
 
                 var xData = data4.map(function (item) {
                     return item['trade_date'];
@@ -604,21 +610,22 @@ abbr[data-title]:not([data-title=""]):hover:after {
                     profitData4.push(parseFloat(cumulativeProfit4.toFixed(2))); 
                 });
 
-                var profitData5 = data5.map(function (item) {
+                var profitData5 = data5.length > 0 ? data5.map(function (item) {
                     return parseFloat(item['profit']);
-                });
+                }) : new Array(data4.length).fill(0);
 
                 var combinedProfitData = profitData4.map(function (value, index) {
-                    return (value + profitData5[index]).toFixed(2);
+                    var optionProfit = (profitData5[index] == null || Number.isNaN(profitData5[index])) ? 0 : profitData5[index];
+                    return parseFloat((value + optionProfit).toFixed(2));
                 });
 
                 var totalProfitDiff = [];
                 combinedProfitData.forEach(function (value, index) {
                     if (index === 0) {
-                        totalProfitDiff.push(parseFloat(value).toFixed(2));
+                        totalProfitDiff.push(parseFloat(value.toFixed(2)));
                     } else {
                         var diff = parseFloat(value) - parseFloat(combinedProfitData[index - 1]);
-                        totalProfitDiff.push(diff.toFixed(2));
+                        totalProfitDiff.push(parseFloat(diff.toFixed(2)));
                     }
                 });
 

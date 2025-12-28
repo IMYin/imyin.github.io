@@ -937,7 +937,7 @@ abbr[data-title]:not([data-title=""]):hover:after {
 </div>
 
 <script>
-        fetch('/echarts_data/evaluation.json')
+        fetch('/echarts_data/csi_500_enhanced_dev_evaluation.json')
                 .then(response => response.json())
                 .then(data => {
                         document.getElementById('annual-compound-return').textContent = data['年复合收益率'];
