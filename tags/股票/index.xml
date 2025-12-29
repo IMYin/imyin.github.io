@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>股票 on Hippo Inv.</title>
-    <link>https://www.hippoinv.com/tags/%E8%82%A1%E7%A5%A8/</link>
+    <link>https://hippoinv.com/tags/%E8%82%A1%E7%A5%A8/</link>
     <description>Recent content in 股票 on Hippo Inv.</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; (2023-2025) [Hippo Inv.](https://hippoinv.com)</copyright>
     <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.hippoinv.com/tags/%E8%82%A1%E7%A5%A8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hippoinv.com/tags/%E8%82%A1%E7%A5%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>今天因为期权侧的失误操作，教训不小</title>
-      <link>https://www.hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</link>
+      <link>https://hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</link>
       <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</guid>
+      <guid>https://hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</guid>
       <description></description>
     </item>
     <item>
       <title>给投资策略添加了评估指标，短期内夏普率高得离谱</title>
-      <link>https://www.hippoinv.com/posts/powerful-strategy-indicators/</link>
+      <link>https://hippoinv.com/posts/powerful-strategy-indicators/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/powerful-strategy-indicators/</guid>
+      <guid>https://hippoinv.com/posts/powerful-strategy-indicators/</guid>
       <description>今日的策略报告以及今日股市的情况报告。</description>
     </item>
     <item>
       <title>smart hedge策略最近表现得坚如磐石</title>
-      <link>https://www.hippoinv.com/posts/rock-solid-investment/</link>
+      <link>https://hippoinv.com/posts/rock-solid-investment/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/rock-solid-investment/</guid>
+      <guid>https://hippoinv.com/posts/rock-solid-investment/</guid>
       <description>策略表现依旧优秀，继续冲冲冲~</description>
     </item>
     <item>
       <title>在执行策略中犯了小错误，但不影响策略整体收益</title>
-      <link>https://www.hippoinv.com/posts/control-your-hands/</link>
+      <link>https://hippoinv.com/posts/control-your-hands/</link>
       <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/control-your-hands/</guid>
+      <guid>https://hippoinv.com/posts/control-your-hands/</guid>
       <description>这篇文章记录了作者在市场剧烈波动中的投资经历和教训，强调了严格执行投资计划的重要性。</description>
     </item>
     <item>
       <title>Smart Hedge策略正式上线，实盘记录，初见成效</title>
-      <link>https://www.hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</link>
+      <link>https://hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</guid>
+      <guid>https://hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</guid>
       <description>策略测试表现优异，成功规避大盘大跌。</description>
     </item>
     <item>
       <title>利用连续小波变换（CWT）对股票数据去噪</title>
-      <link>https://www.hippoinv.com/posts/cwt-denosied-stock/</link>
+      <link>https://hippoinv.com/posts/cwt-denosied-stock/</link>
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/cwt-denosied-stock/</guid>
+      <guid>https://hippoinv.com/posts/cwt-denosied-stock/</guid>
       <description>利用连续小波变换（CWT）对股票数据去噪</description>
     </item>
     <item>
       <title>投研回顾：价值投资中的分析与实践</title>
-      <link>https://www.hippoinv.com/posts/investment-review-analysis-practice-value-investing/</link>
+      <link>https://hippoinv.com/posts/investment-review-analysis-practice-value-investing/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/investment-review-analysis-practice-value-investing/</guid>
+      <guid>https://hippoinv.com/posts/investment-review-analysis-practice-value-investing/</guid>
       <description>通过分析投资策略的回顾和转变，本文介绍了价值投资的理念和实践，并以东方电缆为案例进行了详细分析。</description>
     </item>
     <item>
       <title>公司财务与股价关系的研究分析</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</guid>
       <description>通过研究分析公司财务与股价关系，发现稳定增长的ROE和其他指标的综合影响是股价增长的关键。</description>
     </item>
     <item>
       <title>智能选股系统-2</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</link>
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</guid>
       <description>介绍了智能选股系统的更新情况和使用的算法，强调不预测市场走势，而是通过指示信号做决策。</description>
     </item>
     <item>
       <title>智能选股系统-1</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</link>
       <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</guid>
       <description>一个智能选股系统，通过均值回归策略实现股票盈利的回测和监测。</description>
     </item>
   </channel>

@@ -2,396 +2,396 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hippo Inv.</title>
-    <link>https://www.hippoinv.com/posts/</link>
+    <link>https://hippoinv.com/posts/</link>
     <description>Recent content on Hippo Inv.</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; (2023-2025) [Hippo Inv.](https://hippoinv.com)</copyright>
     <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.hippoinv.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hippoinv.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>优化主力净流入稳定性分析的数学方案与代码实现</title>
-      <link>https://www.hippoinv.com/posts/stable-inflow-analysis/</link>
+      <link>https://hippoinv.com/posts/stable-inflow-analysis/</link>
       <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/stable-inflow-analysis/</guid>
+      <guid>https://hippoinv.com/posts/stable-inflow-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>smart hedge 策略盈利突破20万</title>
-      <link>https://www.hippoinv.com/posts/investment-research-surpassing-200k/</link>
+      <link>https://hippoinv.com/posts/investment-research-surpassing-200k/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/investment-research-surpassing-200k/</guid>
+      <guid>https://hippoinv.com/posts/investment-research-surpassing-200k/</guid>
       <description></description>
     </item>
     <item>
       <title>极低成本搭建AI知识库：NextChat &#43; Upstash &#43; DeepSeek全攻略</title>
-      <link>https://www.hippoinv.com/posts/low-cost-ai-knowledge-base/</link>
+      <link>https://hippoinv.com/posts/low-cost-ai-knowledge-base/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/low-cost-ai-knowledge-base/</guid>
+      <guid>https://hippoinv.com/posts/low-cost-ai-knowledge-base/</guid>
       <description></description>
     </item>
     <item>
       <title>策略在运行的第30个交易日，收益突破10万</title>
-      <link>https://www.hippoinv.com/posts/investment-research-surpassing-100k/</link>
+      <link>https://hippoinv.com/posts/investment-research-surpassing-100k/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/investment-research-surpassing-100k/</guid>
+      <guid>https://hippoinv.com/posts/investment-research-surpassing-100k/</guid>
       <description></description>
     </item>
     <item>
       <title>归途沉思：在书籍与生活中探寻自我</title>
-      <link>https://www.hippoinv.com/posts/reflections-on-the-homeward-journey/</link>
+      <link>https://hippoinv.com/posts/reflections-on-the-homeward-journey/</link>
       <pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/reflections-on-the-homeward-journey/</guid>
+      <guid>https://hippoinv.com/posts/reflections-on-the-homeward-journey/</guid>
       <description></description>
     </item>
     <item>
       <title>今天的亏损始料未及，但长远看未必是一件坏事</title>
-      <link>https://www.hippoinv.com/posts/unexpected-loss-but-long-term-gain-20250114/</link>
+      <link>https://hippoinv.com/posts/unexpected-loss-but-long-term-gain-20250114/</link>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/unexpected-loss-but-long-term-gain-20250114/</guid>
+      <guid>https://hippoinv.com/posts/unexpected-loss-but-long-term-gain-20250114/</guid>
       <description></description>
     </item>
     <item>
       <title>今天因为期权侧的失误操作，教训不小</title>
-      <link>https://www.hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</link>
+      <link>https://hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</link>
       <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</guid>
+      <guid>https://hippoinv.com/posts/market-performance-and-investment-strategy-20250113/</guid>
       <description></description>
     </item>
     <item>
       <title>给投资策略添加了评估指标，短期内夏普率高得离谱</title>
-      <link>https://www.hippoinv.com/posts/powerful-strategy-indicators/</link>
+      <link>https://hippoinv.com/posts/powerful-strategy-indicators/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/powerful-strategy-indicators/</guid>
+      <guid>https://hippoinv.com/posts/powerful-strategy-indicators/</guid>
       <description>今日的策略报告以及今日股市的情况报告。</description>
     </item>
     <item>
       <title>smart hedge策略最近表现得坚如磐石</title>
-      <link>https://www.hippoinv.com/posts/rock-solid-investment/</link>
+      <link>https://hippoinv.com/posts/rock-solid-investment/</link>
       <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/rock-solid-investment/</guid>
+      <guid>https://hippoinv.com/posts/rock-solid-investment/</guid>
       <description>策略表现依旧优秀，继续冲冲冲~</description>
     </item>
     <item>
       <title>在执行策略中犯了小错误，但不影响策略整体收益</title>
-      <link>https://www.hippoinv.com/posts/control-your-hands/</link>
+      <link>https://hippoinv.com/posts/control-your-hands/</link>
       <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/control-your-hands/</guid>
+      <guid>https://hippoinv.com/posts/control-your-hands/</guid>
       <description>这篇文章记录了作者在市场剧烈波动中的投资经历和教训，强调了严格执行投资计划的重要性。</description>
     </item>
     <item>
       <title>Smart Hedge策略正式上线，实盘记录，初见成效</title>
-      <link>https://www.hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</link>
+      <link>https://hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</guid>
+      <guid>https://hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</guid>
       <description>策略测试表现优异，成功规避大盘大跌。</description>
     </item>
     <item>
       <title>简述对冲的必要性</title>
-      <link>https://www.hippoinv.com/posts/hedge-importance/</link>
+      <link>https://hippoinv.com/posts/hedge-importance/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/hedge-importance/</guid>
+      <guid>https://hippoinv.com/posts/hedge-importance/</guid>
       <description>通过期权、股票的对冲试验，探讨对冲的重要性。</description>
     </item>
     <item>
       <title>8年股市反思</title>
-      <link>https://www.hippoinv.com/posts/8-year-stock-market-reflection/</link>
+      <link>https://hippoinv.com/posts/8-year-stock-market-reflection/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/8-year-stock-market-reflection/</guid>
+      <guid>https://hippoinv.com/posts/8-year-stock-market-reflection/</guid>
       <description>从第一次完成交易至今，也有8年多的时间了。坦白来讲，想要在股市中挣钱，很难。我理解的难，是可持续性的难。</description>
     </item>
     <item>
       <title>海峡股份(002320)</title>
-      <link>https://www.hippoinv.com/posts/002320/</link>
+      <link>https://hippoinv.com/posts/002320/</link>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/002320/</guid>
+      <guid>https://hippoinv.com/posts/002320/</guid>
       <description>海峡股份发展历程、主营业务及财务分析。</description>
     </item>
     <item>
       <title>通过读财报，选出3倍大牛股</title>
-      <link>https://www.hippoinv.com/posts/002310/</link>
+      <link>https://hippoinv.com/posts/002310/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/002310/</guid>
+      <guid>https://hippoinv.com/posts/002310/</guid>
       <description>沃尔核材财务稳健，市场竞争力强，投资价值高。</description>
     </item>
     <item>
       <title>捷佳伟创（300724）</title>
-      <link>https://www.hippoinv.com/posts/300724/</link>
+      <link>https://hippoinv.com/posts/300724/</link>
       <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/300724/</guid>
+      <guid>https://hippoinv.com/posts/300724/</guid>
       <description>国内领先的太阳能设备制造企业，业绩显著增长。</description>
     </item>
     <item>
       <title>读《秘密》有感</title>
-      <link>https://www.hippoinv.com/posts/reflections-on-the-secret/</link>
+      <link>https://hippoinv.com/posts/reflections-on-the-secret/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/reflections-on-the-secret/</guid>
+      <guid>https://hippoinv.com/posts/reflections-on-the-secret/</guid>
       <description>在九寨沟游玩途中，一直在阅读《秘密》，这本书，并亲身体验到了神奇之处</description>
     </item>
     <item>
       <title>需求和供给关系</title>
-      <link>https://www.hippoinv.com/posts/demand-and-supply/</link>
+      <link>https://hippoinv.com/posts/demand-and-supply/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/demand-and-supply/</guid>
+      <guid>https://hippoinv.com/posts/demand-and-supply/</guid>
       <description>需求和供给关系</description>
     </item>
     <item>
       <title>常见概率分布</title>
-      <link>https://www.hippoinv.com/posts/common-probability-distributions/</link>
+      <link>https://hippoinv.com/posts/common-probability-distributions/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/common-probability-distributions/</guid>
+      <guid>https://hippoinv.com/posts/common-probability-distributions/</guid>
       <description>常见概率分布</description>
     </item>
     <item>
       <title>概率论基础</title>
-      <link>https://www.hippoinv.com/posts/probability-theory-basics/</link>
+      <link>https://hippoinv.com/posts/probability-theory-basics/</link>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/probability-theory-basics/</guid>
+      <guid>https://hippoinv.com/posts/probability-theory-basics/</guid>
       <description>概率论基础</description>
     </item>
     <item>
       <title>组织、可视化和描述数据</title>
-      <link>https://www.hippoinv.com/posts/data-visualization-and-description/</link>
+      <link>https://hippoinv.com/posts/data-visualization-and-description/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/data-visualization-and-description/</guid>
+      <guid>https://hippoinv.com/posts/data-visualization-and-description/</guid>
       <description>数据可视化与描述</description>
     </item>
     <item>
       <title>货币的时间价值</title>
-      <link>https://www.hippoinv.com/posts/time-value-of-money/</link>
+      <link>https://hippoinv.com/posts/time-value-of-money/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/time-value-of-money/</guid>
+      <guid>https://hippoinv.com/posts/time-value-of-money/</guid>
       <description>货币的时间价值</description>
     </item>
     <item>
       <title>vue.js 学习</title>
-      <link>https://www.hippoinv.com/posts/2024-01-24/</link>
+      <link>https://hippoinv.com/posts/2024-01-24/</link>
       <pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2024-01-24/</guid>
+      <guid>https://hippoinv.com/posts/2024-01-24/</guid>
       <description></description>
     </item>
     <item>
       <title>砥砺前行</title>
-      <link>https://www.hippoinv.com/posts/2024-01-23/</link>
+      <link>https://hippoinv.com/posts/2024-01-23/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2024-01-23/</guid>
+      <guid>https://hippoinv.com/posts/2024-01-23/</guid>
       <description>转载了一篇半夏投资李蓓的文章，感觉很有启发，记录一下。</description>
     </item>
     <item>
       <title>重温财务报表分析</title>
-      <link>https://www.hippoinv.com/posts/2024-01-18/</link>
+      <link>https://hippoinv.com/posts/2024-01-18/</link>
       <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2024-01-18/</guid>
+      <guid>https://hippoinv.com/posts/2024-01-18/</guid>
       <description>财务报表分析</description>
     </item>
     <item>
       <title>新征程-记忆扣</title>
-      <link>https://www.hippoinv.com/posts/2024-01-15/</link>
+      <link>https://hippoinv.com/posts/2024-01-15/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2024-01-15/</guid>
+      <guid>https://hippoinv.com/posts/2024-01-15/</guid>
       <description>发现了copilot-gpt4-service；学习安卓开发。</description>
     </item>
     <item>
       <title>2023年：回顾与反思</title>
-      <link>https://www.hippoinv.com/posts/2024-01-11/</link>
+      <link>https://hippoinv.com/posts/2024-01-11/</link>
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2024-01-11/</guid>
+      <guid>https://hippoinv.com/posts/2024-01-11/</guid>
       <description>文章总结了作者在2023年的健康状况、工作经历、个人生活、友情、学习和旅行等方面的经历。文章中还包括了对情感状态的反思以及对未来的计划。</description>
     </item>
     <item>
       <title>新工具ChartGPT-nextweb</title>
-      <link>https://www.hippoinv.com/posts/2024-01-03/</link>
+      <link>https://hippoinv.com/posts/2024-01-03/</link>
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2024-01-03/</guid>
+      <guid>https://hippoinv.com/posts/2024-01-03/</guid>
       <description>发现新工具ChartGPT-nextweb，部署并体验AIGC API带来的强大功能。</description>
     </item>
     <item>
       <title>学习变通</title>
-      <link>https://www.hippoinv.com/posts/2023-12-28/</link>
+      <link>https://hippoinv.com/posts/2023-12-28/</link>
       <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-28/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-28/</guid>
       <description>读书笔记</description>
     </item>
     <item>
       <title>解惑：新青年的工作理解</title>
-      <link>https://www.hippoinv.com/posts/2023-12-27/</link>
+      <link>https://hippoinv.com/posts/2023-12-27/</link>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-27/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-27/</guid>
       <description>日常交易总结、读《找事：给年青一代的就业解惑书》有感</description>
     </item>
     <item>
       <title>大盘继续下探</title>
-      <link>https://www.hippoinv.com/posts/2023-12-26/</link>
+      <link>https://hippoinv.com/posts/2023-12-26/</link>
       <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-26/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-26/</guid>
       <description>清闲的一天&amp;hellip;</description>
     </item>
     <item>
       <title>更新MR</title>
-      <link>https://www.hippoinv.com/posts/2023-12-25/</link>
+      <link>https://hippoinv.com/posts/2023-12-25/</link>
       <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-25/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-25/</guid>
       <description>针对策略回测中的问题进行了优化，以提高胜率和收益率。</description>
     </item>
     <item>
       <title>越来越多的需求</title>
-      <link>https://www.hippoinv.com/posts/2023-12-20/</link>
+      <link>https://hippoinv.com/posts/2023-12-20/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-20/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-20/</guid>
       <description>对股票交易系统进行了需求修改和回测优化，并记录了当天的操作和开发计划。</description>
     </item>
     <item>
       <title>平淡的一天</title>
-      <link>https://www.hippoinv.com/posts/2023-12-19/</link>
+      <link>https://hippoinv.com/posts/2023-12-19/</link>
       <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-19/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-19/</guid>
       <description>记录了一天的股市操作、旅行中的高反余波体验，以及对面试和职业规划的思考。</description>
     </item>
     <item>
       <title>重新培养习惯</title>
-      <link>https://www.hippoinv.com/posts/2023-12-18/</link>
+      <link>https://hippoinv.com/posts/2023-12-18/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/2023-12-18/</guid>
+      <guid>https://hippoinv.com/posts/2023-12-18/</guid>
       <description>重新培养写日报习惯。记录了今天股市操作和commit事件。</description>
     </item>
     <item>
       <title>忙碌的癸亥月</title>
-      <link>https://www.hippoinv.com/posts/busy_november/</link>
+      <link>https://hippoinv.com/posts/busy_november/</link>
       <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/busy_november/</guid>
+      <guid>https://hippoinv.com/posts/busy_november/</guid>
       <description>记录了最近的忙碌状态以及在搭建网站过程中的学习和探索。</description>
     </item>
     <item>
       <title>利用连续小波变换（CWT）对股票数据去噪</title>
-      <link>https://www.hippoinv.com/posts/cwt-denosied-stock/</link>
+      <link>https://hippoinv.com/posts/cwt-denosied-stock/</link>
       <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/cwt-denosied-stock/</guid>
+      <guid>https://hippoinv.com/posts/cwt-denosied-stock/</guid>
       <description>利用连续小波变换（CWT）对股票数据去噪</description>
     </item>
     <item>
       <title>读《阿米·星星的小孩》有感</title>
-      <link>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%98%9F%E6%98%9F%E7%9A%84%E5%B0%8F%E5%AD%A9/</link>
+      <link>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%98%9F%E6%98%9F%E7%9A%84%E5%B0%8F%E5%AD%A9/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%98%9F%E6%98%9F%E7%9A%84%E5%B0%8F%E5%AD%A9/</guid>
+      <guid>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%98%9F%E6%98%9F%E7%9A%84%E5%B0%8F%E5%AD%A9/</guid>
       <description>一本震撼人心的儿童读物，探讨外星人与人类的关系以及宇宙中的大爱理念。</description>
     </item>
     <item>
       <title>投研回顾：价值投资中的分析与实践</title>
-      <link>https://www.hippoinv.com/posts/investment-review-analysis-practice-value-investing/</link>
+      <link>https://hippoinv.com/posts/investment-review-analysis-practice-value-investing/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/investment-review-analysis-practice-value-investing/</guid>
+      <guid>https://hippoinv.com/posts/investment-review-analysis-practice-value-investing/</guid>
       <description>通过分析投资策略的回顾和转变，本文介绍了价值投资的理念和实践，并以东方电缆为案例进行了详细分析。</description>
     </item>
     <item>
       <title>公司财务与股价关系的研究分析</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-%E5%85%AC%E5%8F%B8%E8%B4%A2%E5%8A%A1%E4%B8%8E%E8%82%A1%E4%BB%B7%E5%85%B3%E7%B3%BB%E7%9A%84%E7%A0%94%E7%A9%B6%E5%88%86%E6%9E%90/</guid>
       <description>通过研究分析公司财务与股价关系，发现稳定增长的ROE和其他指标的综合影响是股价增长的关键。</description>
     </item>
     <item>
       <title>智能选股系统-2</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</link>
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem2/</guid>
       <description>介绍了智能选股系统的更新情况和使用的算法，强调不预测市场走势，而是通过指示信号做决策。</description>
     </item>
     <item>
       <title>智能选股系统-1</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</link>
       <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%95%E8%B5%84%E7%A0%94%E7%A9%B6-mystocksystem1/</guid>
       <description>一个智能选股系统，通过均值回归策略实现股票盈利的回测和监测。</description>
     </item>
     <item>
       <title>House prices</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-houseprice/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-houseprice/</link>
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-houseprice/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-houseprice/</guid>
       <description>Predicting house prices using machine learning algorithms.</description>
     </item>
     <item>
       <title>大楼</title>
-      <link>https://www.hippoinv.com/posts/big-building/</link>
+      <link>https://hippoinv.com/posts/big-building/</link>
       <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/big-building/</guid>
+      <guid>https://hippoinv.com/posts/big-building/</guid>
       <description></description>
     </item>
     <item>
       <title>深夜无眠，下床有感</title>
-      <link>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%B7%B1%E5%A4%9C%E6%97%A0%E7%9C%A0/</link>
+      <link>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%B7%B1%E5%A4%9C%E6%97%A0%E7%9C%A0/</link>
       <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%B7%B1%E5%A4%9C%E6%97%A0%E7%9C%A0/</guid>
+      <guid>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E6%B7%B1%E5%A4%9C%E6%97%A0%E7%9C%A0/</guid>
       <description>一位程序员深夜思考工作与生活的关系。</description>
     </item>
     <item>
       <title>近日状态</title>
-      <link>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-current_status/</link>
+      <link>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-current_status/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-current_status/</guid>
+      <guid>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-current_status/</guid>
       <description>一个人在忙碌中思考生活的意义和职业规划。</description>
     </item>
     <item>
       <title>青年的眼神</title>
-      <link>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E9%9D%92%E5%B9%B4%E7%9A%84%E7%9C%BC%E7%A5%9E/</link>
+      <link>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E9%9D%92%E5%B9%B4%E7%9A%84%E7%9C%BC%E7%A5%9E/</link>
       <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E9%9D%92%E5%B9%B4%E7%9A%84%E7%9C%BC%E7%A5%9E/</guid>
+      <guid>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-%E9%9D%92%E5%B9%B4%E7%9A%84%E7%9C%BC%E7%A5%9E/</guid>
       <description>一位青年在餐厅里展现对母亲的细腻疼爱，让小伙子思念起自己的父母。</description>
     </item>
     <item>
       <title>My Eyereach</title>
-      <link>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-myeyereach/</link>
+      <link>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-myeyereach/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E9%9A%8F%E7%AC%94-myeyereach/</guid>
+      <guid>https://hippoinv.com/posts/%E9%9A%8F%E7%AC%94-myeyereach/</guid>
       <description>Yin在朋友的邀请下去外滩转了一下，遇到一个老大爷后，对自己的人生产生了感慨，但通过朋友的朋友圈，重新明确了自己的方向和目标。</description>
     </item>
     <item>
       <title>《统计学习方法》-感知机</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-perceptron/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-perceptron/</link>
       <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-perceptron/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-perceptron/</guid>
       <description>本文介绍了《统计学习方法》中的感知机模型及其学习算法。</description>
     </item>
     <item>
       <title>浅谈支持向量机</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E6%B5%85%E8%B0%88%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E6%B5%85%E8%B0%88%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</link>
       <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E6%B5%85%E8%B0%88%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E6%B5%85%E8%B0%88%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</guid>
       <description>本文介绍了支持向量机（SVM）的基本概念和应用，以及核函数的作用和处理离群点的方法。</description>
     </item>
     <item>
       <title>K-Means 聚类</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-k-means/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-k-means/</link>
       <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-k-means/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-k-means/</guid>
       <description>K-Means 聚类算法是一种快速且可扩展的聚类算法，通过重复移动类中心点的过程来划分数据集。</description>
     </item>
     <item>
       <title>从线性回归到逻辑回归：解决二元分类问题</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E4%BB%8E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%B0%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E4%BB%8E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%B0%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/</link>
       <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E4%BB%8E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%B0%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E4%BB%8E%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%B0%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/</guid>
       <description>从线性回归到逻辑回归：解决二元分类问题的机器学习算法。</description>
     </item>
     <item>
       <title>决策树</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/</link>
       <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
       <description>决策树是一种树状的决策模型，通过递归地切分解释变量来学习，并用节点测试解释变量来指定输出。</description>
     </item>
     <item>
       <title>聊聊随机森林</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E8%81%8A%E8%81%8A%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E8%81%8A%E8%81%8A%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/</link>
       <pubDate>Fri, 28 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E8%81%8A%E8%81%8A%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E8%81%8A%E8%81%8A%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/</guid>
       <description>本文详细介绍了随机森林的用法和决策树的关系。</description>
     </item>
     <item>
       <title>某银行大数据平台处理系统</title>
-      <link>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/</link>
+      <link>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/</link>
       <pubDate>Wed, 26 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/</guid>
+      <guid>https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/</guid>
       <description>本文详细记录了作者在某银行大数据平台项目组的经历和对项目架构的理解。</description>
     </item>
   </channel>
