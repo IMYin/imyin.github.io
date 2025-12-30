@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>期权 on Hippo Inv.</title>
+    <link>https://hippoinv.com/tags/%E6%9C%9F%E6%9D%83/</link>
+    <description>Recent content in 期权 on Hippo Inv.</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; (2023-2026) [Hippo Inv.](https://hippoinv.com)</copyright>
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hippoinv.com/tags/%E6%9C%9F%E6%9D%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>今天的亏损始料未及，但长远看未必是一件坏事</title>
+      <link>https://hippoinv.com/posts/unexpected-loss-but-long-term-gain-20250114/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hippoinv.com/posts/unexpected-loss-but-long-term-gain-20250114/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>给投资策略添加了评估指标，短期内夏普率高得离谱</title>
+      <link>https://hippoinv.com/posts/powerful-strategy-indicators/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hippoinv.com/posts/powerful-strategy-indicators/</guid>
+      <description>今日的策略报告以及今日股市的情况报告。</description>
+    </item>
+    <item>
+      <title>smart hedge策略最近表现得坚如磐石</title>
+      <link>https://hippoinv.com/posts/rock-solid-investment/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hippoinv.com/posts/rock-solid-investment/</guid>
+      <description>策略表现依旧优秀，继续冲冲冲~</description>
+    </item>
+    <item>
+      <title>在执行策略中犯了小错误，但不影响策略整体收益</title>
+      <link>https://hippoinv.com/posts/control-your-hands/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hippoinv.com/posts/control-your-hands/</guid>
+      <description>这篇文章记录了作者在市场剧烈波动中的投资经历和教训，强调了严格执行投资计划的重要性。</description>
+    </item>
+    <item>
+      <title>Smart Hedge策略正式上线，实盘记录，初见成效</title>
+      <link>https://hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hippoinv.com/posts/avoiding-the-crash-is-just-the-first-step/</guid>
+      <description>策略测试表现优异，成功规避大盘大跌。</description>
+    </item>
+  </channel>
+</rss>

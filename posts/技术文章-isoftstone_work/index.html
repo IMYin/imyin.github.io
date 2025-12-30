@@ -1,0 +1,1199 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="zh-cn"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
+  <style>
+    body {
+      font-family: "LXGW WenKai Lite", sans-serif;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>某银行大数据平台处理系统 &middot; Hippo Inv.</title>
+  <meta name="title" content="某银行大数据平台处理系统 &middot; Hippo Inv." />
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2d0601ca68b66161f0b589707efcbf4762fc87869cf0f3a5c93738cc1af71af5.css"
+    integrity="sha256-LQYBymi2YWHwtYlwfvy/R2L8h4ac8POlyTc4zBr3GvU=" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.0b250a079f6c2f7d0e03d1f0aa1308acb88137e3caebe1268f7478f0c87c5bf8.js"
+    integrity="sha256-CyUKB59sL30OA9HwqhMIrLiBN&#43;PK6&#43;Emj3R48Mh8W/g=" data-copy="Copy" data-copied="Copied"></script>
+  
+  
+  <meta name="description" content="
+      
+        本文详细记录了作者在某银行大数据平台项目组的经历和对项目架构的理解。
+      
+    " />
+  
+  
+  
+  <link rel="canonical" href="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/" />
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/">
+  <meta property="og:site_name" content="Hippo Inv.">
+  <meta property="og:title" content="某银行大数据平台处理系统">
+  <meta property="og:description" content="本文详细记录了作者在某银行大数据平台项目组的经历和对项目架构的理解。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2016-10-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2016-10-26T00:00:00+00:00">
+    <meta property="article:tag" content="Kafka">
+    <meta property="article:tag" content="Flume">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="SMDA">
+    <meta property="article:tag" content="SWDA">
+    <meta property="article:tag" content="数据采集">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="某银行大数据平台处理系统">
+  <meta name="twitter:description" content="本文详细记录了作者在某银行大数据平台项目组的经历和对项目架构的理解。">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "某银行大数据平台处理系统",
+    "headline": "某银行大数据平台处理系统",
+    
+    "abstract": "本文详细记录了作者在某银行大数据平台项目组的经历和对项目架构的理解。",
+    "inLanguage": "zh-cn",
+    "url" : "https:\/\/hippoinv.com\/posts\/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work\/",
+    "author" : {
+      "@type": "Person",
+      "name": "小隐"
+    },
+    "copyrightYear": "2016",
+    "dateCreated": "2016-10-26T00:00:00\u002b00:00",
+    "datePublished": "2016-10-26T00:00:00\u002b00:00",
+    
+    "dateModified": "2016-10-26T00:00:00\u002b00:00",
+    
+    "keywords": ["kafka","flume","python","SMDA","SWDA","数据采集","可视化","数据分析","用户画像"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "69"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://hippoinv.com/",
+       "name": "",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://hippoinv.com/posts/",
+       "name": "",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://hippoinv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/",
+       "name": "技术文章",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "某银行大数据平台处理系统",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+  <meta name="author" content="小隐" />
+  
+  
+  
+  <link href="mailto:yinlife777@gmail.com" rel="me" />
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E9HCG9FD1"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0E9HCG9FD1');
+        }
+      </script>
+
+
+  
+  
+</head><body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >跳到主要内容</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Hippo Inv.</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/hippo/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >
+
+  <span class="icon relative inline-block align-text-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M407 47c9.4-9.4 24.6-9.4 33.9 0l17.2 17.2c1.9-.1 3.9-.2 5.8-.2h32c11.2 0 21.9 2.3 31.6 6.5L543 55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L564 101.9c7.6 12.2 12 26.7 12 42.1c0 10.2 7.4 18.8 16.7 23c27.9 12.5 47.3 40.5 47.3 73c0 26.2-12.6 49.4-32 64v32c0 8.8-7.2 16-16 16H560c-8.8 0-16-7.2-16-16V320H480v16c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V318.4c-11.8-2.4-22.7-7.4-32-14.4c-1.5-1.1-2.9-2.3-4.3-3.5c-17-14.7-27.7-36.4-27.7-60.5c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 44.7 26.2 83.2 64 101.2V352c0 17.7 14.3 32 32 32h32v64c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V372c-19.8 7.7-41.4 12-64 12s-44.2-4.3-64-12v76c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V329.1L45.9 369.7c-5.4 12.1-19.6 17.6-31.7 12.2S-3.3 362.4 2.1 350.3L24 300.9c5.3-11.9 8-24.7 8-37.7C32 155.7 117.2 68 223.8 64.1l.2-.1h7.2H256h32c41.7 0 83.4 12.1 117.2 25.7c1.7-1.8 3.5-3.6 5.3-5.2L407 81c-9.4-9.4-9.4-24.6 0-33.9zm73 185a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm88 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM480 144a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+  </span>
+
+
+</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >关于</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >文章</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/categories/"
+                  title="分类"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >分类</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/tags/"
+                  title="标签"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >标签</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+                  <button
+                    id="search-button-1"
+                    title="搜索 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        某银行大数据平台处理系统
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2016-10-26 00:00:00 &#43;0000 UTC">2016-10-26</time>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="https://hippoinv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >技术文章</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="https://hippoinv.com/tags/kafka/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Kafka</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/flume/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Flume</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/python/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >Python</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/smda/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >SMDA</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/swda/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >SWDA</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >数据采集</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >可视化</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >数据分析</a
+            >
+          
+            <a
+              href="https://hippoinv.com/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >用户画像</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#架构">架构</a></li>
+        <li><a href="#平台">平台</a></li>
+        <li><a href="#总结">总结</a></li>
+        <li><a href="#后话">后话</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>《富兰克林自传》是我最爱的书目之一，在他的自传中，富兰克林十分推崇勤劳和节俭，提到了36次之多。这也深深地影响了我，并且将勤劳、节俭作为自己的生活准则。而且我对生活同样充满了无穷的好奇心，促使我每天都想多知道些什么，所以我养成了每天都看书的习惯。并且可喜的是，在维持了很长时间写日记的习惯之后，我得到了很多好处。当我回首再看那些自己写过的东西时，除了看到了自己一点点成长进步的痕迹外，还使得自己想起了很多都将要忘记的有趣事情。所以我有了这样的一个打算，将利用几个月的时间，把自己在某银行大数据平台项目组的经历，详细的记录下来。当然，主题是为了让自己对项目有一个更加清楚的认识，不仅对整个项目知其然，而且要知其所以然。</p>
+<p>在去东单上班的前一个月，项目总监，也是我的领导洋哥就下发了一些资料让我学习。说实在的，看那些资料对我来讲实在是一种折磨，因为那个时候我正沉浸在开发<a href="https://mahout.apache.org/" target="_blank" rel="noreferrer">mahout</a>算法的乐趣当中，突然接到了这一档子差事，着实让我觉得十分乏味。</p>
+<p>那些材料是一些关于SMDA以及SWDA的白皮书、部署手册、操作手册、测试报告、产品需求说明书等等。从这些资料中，在我脑子里并没有勾勒出一个清晰的框架图，直到在SWDA将要上线的时候，我才对这个项目有了一个全面且清晰的了解。</p>
+<p>首先要讲的是，某银行的这个项目，涉及到了多个公司的配合。其中有软通动力，也是这个项目的乙方，负责的是SMDA和SWDA的开发、部署、测试、维护，直到交接。目前对百分点所处在的位置不是有很深的了解，不过通过项目的架构图可以看出，百分点也参与了这个项目的开发，占据了比较重要的位置。再者就是雅普兰以及安永，雅普兰和安永应该是负责埋码提需求等角色的。</p>
+<p>据我了解，这个项目曾经在宁波实施过，应该算是一个比较成熟的作品。所以在华夏这个项目中，我幸运地躲开了第一次项目实施所应该遇到的一系列不可预知的麻烦。</p>
+<p>在这里，我要特别感谢我的同事宾哥，他的耐心指导使得我每天都在进步。虽然他的嗓音和他的语速并不招人喜欢，但是在内心中，我是十分尊敬他的。刚进项目的时候，宾哥让我修改一些python脚本，但是我对这些python脚本的作用知之甚少。也是在后来慢慢的接触中，才知道原来这些python脚本，就是为了实现在hive中进行简单的数据挖掘。这些python脚本会被编辑成一些作业，放在公司开发的SMC作业调度平台中进行作业调度。有关SMC的具体操作，我将在下文详细介绍。</p>
+<p>我所做的项目属于BI(Business Intelligence)，也就是商业智能。它有着一套完整的解决方案，用来将企业中现有的数据进行有效的整合，快速准确的提供报表并提出决策依据，帮助企业做出明智的业务经营决策。不得不说，软通动力的这个产品还是很漂亮的。优美且炫酷的界面，相信未来让银行的管理人员用起来一定会爱不释手。相比某直销银行的web页面，确实能好上好几倍。</p>
+<p>我作为一名后台的开发人员，每天都和一堆数据、表、代码打交道。在部署SWDA期间，我做了很长一段时间的测试人员。不过我做的是白盒测试，而不是黑盒测试。所谓的白盒测试，又称为结构测试、透明盒测试、逻辑驱动测试或基于代码的测试。在测试过程中，我需要清楚盒子内部的东西以及里面是如何运作的。比如我在某直销银行web端进行一些界面操作之后，我需要知道在后台是如何接受到数据的，以及接受到的数据会进行如何的处理。</p>
+<h3 id="架构" class="relative group">架构 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%9e%b6%e6%9e%84" aria-label="锚点">#</a></span></h3><p>那么，我先从产品的架构谈起。SWDA这个产品，是通过在某直销银行web端进行事件埋码，当用户在web端进行操作时，一些行为轨迹会被后台悄悄的记录下来，形成JSON字符串。这些JSON字符串会通过Nginx服务将数据以日志的形式记录在后台服务器中的access.log文件中。这些文件被设置为每半个小时进行一次转移，在项目中这个动作被称为切割日志。接下来，是我比较困惑的一个环节，它用到了Flume和Kafka。</p>
+<p><a href="https://flume.apache.org/" target="_blank" rel="noreferrer">Flume</a>，是一个分布式、可靠、和高可用的海量日志采集、聚合和传输的系统。以下是FLUME的架构图：<center>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/flume%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_2b320f51a74efe2f.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="456"
+        height="191"
+        class="mx-auto my-0 rounded-md"
+        alt="flume"
+        loading="lazy" decoding="async"
+        
+          src="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/flume%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</center>
+从上图可以看到几个名词，有Agent、Source、Channel、Sink。</p>
+<ul>
+<li>一个Agent包含Source、Channel、Sink、和其他组件。Flume就是由一个或者多个Agent组成;</li>
+<li>Source是数据源，简单的说就是Agent获取数据的入口;</li>
+<li>Channel是数据流通和存储的通道。一个Source必须至少和一个Channel关联;</li>
+<li>Sink是用来接受Channel传输的数据并将之传送到指定的地方。传送成功后数据从Channel中删除。</li>
+</ul>
+<p>Flume具有高可扩展的性，可以随意组合。也就是说，在上图中，Sink端可以继续把数据传送到另一个Flume中的Source端。当然，还可以通过另外一种方式进行组合。比如一个source端把数据发送给了三个Channel端，这三个Channel端把数据分别发送给了三个Sink端，这三个Sink端的数据，可以根据不同的需求发送到三个不同的接收端，比如其中一个发送给了HDFS，一个发送给了JMS（Java Message Service），一个发送给了另外一个Flume的Source端。</p>
+<p>再来看<a href="https://kafka.apache.org/" target="_blank" rel="noreferrer">Kafka</a>。Kafka是一种高吞吐量的分布式发布订阅消息系统，它可以处理消费者规模的网站中的所有动作流数据。这种动作（网页浏览，搜索和其他用户的行为）是现代网络上的许多社会功能的一个关键因素。这些数据通常是由于高吞吐量的要求而通过处理日志和日志聚合来解决。对于像Hadoop的一样的日志数据和离线分析系统，但又要求实时处理的限制，这是一个可行的解决方案。</p>
+<p>Kafka有以下特性：</p>
+<ul>
+<li>通过Ｏ(1)的磁盘数据结构提供消息的持久化，这种结构对于即使数以TB的消息存储也能够保持长时间的稳定性能;</li>
+<li>高吞吐量：即使是非常普通的硬件Kafka也可以支持每秒数百万的消息;</li>
+<li>支持通过Kafka服务器和消费机集群来分区消息;</li>
+<li>支持Hadoop并行数据加载;</li>
+</ul>
+<p>以下是Kafka的架构图：<center>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/kafka%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_210d897267d54ac4.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="258"
+        height="180"
+        class="mx-auto my-0 rounded-md"
+        alt="kafka"
+        loading="lazy" decoding="async"
+        
+          src="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/kafka%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</center>
+Kafka是显式分布式架构（明确的指定数据的来源、走向、目的地），producer、broker（Kafka）和consumer都可以有多个。Kafka的作用类似于缓存，即活跃的数据和离线处理系统之间的缓存。这其中有几个概念：</p>
+<ul>
+<li>message（消息）是通信的基本单位，每个producer可以向一个topic（主题）发布一些消息。如果consumer订阅了这个主题，那么新发布的消息就会广播给这些consumer;</li>
+<li>Kafka是显式分布式的，多个producer、consumer、和broker可以运行在一个大的集群上，作为一个逻辑整体对外提供服务。对于consumer，多个consumer可以组成一个group，这个message只能传输给某个group中的某一个consumer;</li>
+</ul>
+<p>数据从producer推送到broker，接着consumer再从broker上拉取数据（也就是项目经理亮哥所说的数据落地）。</p>
+<p>说到这里，就可以清楚的看到，Flume可以和Kafka进行无接缝结合。Kafka生产的数据，是由Flume的Sink所提供的，通过Flume集群将Agent的日志收集分发到Kafka（供实时计算处理）和HDFS（离线计算处理）。流程图如下：<center>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_690808f13cc43e2c.webp 330w,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_84374c4a24320adc.webp 660w
+            
+              
+                ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_a4d498d8084cd0e3.webp 839w
+              
+            
+            
+              
+                ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_a4d498d8084cd0e3.webp 839w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="839"
+        height="385"
+        class="mx-auto my-0 rounded-md"
+        alt="flow"
+        loading="lazy" decoding="async"
+        
+          src="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_d2fccd6fb00ca71e.jpg" srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_75ef3937d605760e.jpg 330w,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE_hu_d2fccd6fb00ca71e.jpg 660w
+          
+            ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE.jpg 839w
+          
+          
+            ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%90%91%E8%B5%B0%E5%90%91%E5%9B%BE.jpg 839w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</center>
+可以看到，我们使用Flume作为日志收集系统，将收集到的数据输送到Kafka中间件，以供Storm去实时计算（由百分点负责）以及存储到HDFS上为后续的离线数据分析做准备。</p>
+<p>在这里，我想引用一下<a href="http://www.aboutyun.com/thread-8317-1-1.html" target="_blank" rel="noreferrer">美团的日志收集系统</a>的架构，以供和SWDA架构做一下对比。</p>
+<p>美团的日志收集系统负责美团的所有业务日志的收集，并分别给Hadoop平台提供离线数据和Storm平台提供实时数据流。美团的日志收集系统基于Flume设计和搭建而成。目前每天收集和处理约T级别的日志是数据。下图是美团的日志收集系统的整体框架图:<center>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_603a0e0688b03333.webp 330w,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_fd9be7cefc46a470.webp 660w
+            
+              
+                ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_14b510acaf074895.webp 683w
+              
+            
+            
+              
+                ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_14b510acaf074895.webp 683w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="683"
+        height="414"
+        class="mx-auto my-0 rounded-md"
+        alt="meituan"
+        loading="lazy" decoding="async"
+        
+          src="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_19cc6c57f28d56bb.jpg" srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_c4202eebce2f9b94.jpg 330w,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_19cc6c57f28d56bb.jpg 660w
+          
+            ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg 683w
+          
+          
+            ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E7%BE%8E%E5%9B%A2%E6%97%A5%E5%BF%97%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg 683w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</center>
+整个系统分为三层：Agent层，Collector层和Store层。其中Agent层每个机器部署一个进程，负责对单机的日志收集工作；Collector层部署在中心服务器上，负责接收Agent层发送的日志，并且将日志根据路由规则写到相应的Store层中；Store层负责提供永久或者临时的日志存储服务，或者将日志流导向其它服务器。</p>
+<p>Agent到Collector试用LoadBalance策略，将所有的日志均衡地发到所有的Collector上，达到负载均衡的目标，同时并处理单个Collector失效的问题。</p>
+<p>Collector层的目标主要有三个：SinkHdfs，SinkKafka和SinkBypass。分别提供离线的数据到Hdfs，和提供实时的日志流到Kafka和Bypass。其中SinkHdfs又根据日志量的带线啊哦分为SinkHdfs_b，SinkHdfs_m和SinkHdfs_s三个Sink，以提高写入到Hdfs的性能。</p>
+<p>对于Store来讲，Hdfs负责离线数据的存储；Kafka存储最新的7天日志，并给Storm系统提供实时日志流（这部分和百分点的架构一样）；Bypass负责给其它服务器和应用提供实时日志流。</p>
+<p>说到这里，就可以很清楚的看到美团的日志收集系统架构和SWDA的日志收集系统架构之间的区别了。SWDA的架构在Kafka之后又多加了一层Flume，这是因为在搭建系统时候数据落地端和数据接受端没有在一个ip段上，所以多了一层Flume，但这无疑浪费了很多的资源。</p>
+<p>下图为产品的总体架构图:<center>
+
+
+
+
+
+<figure>
+    
+    
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mx-auto my-0 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_1d39af1a8b70e5ef.webp 330w,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_594d0f09d0c1bd64.webp 660w
+            
+              
+                ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_7b8e943bc998144f.webp 800w
+              
+            
+            
+              
+                ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_7b8e943bc998144f.webp 800w
+              
+            "
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="800"
+        height="558"
+        class="mx-auto my-0 rounded-md"
+        alt="ensemble"
+        loading="lazy" decoding="async"
+        
+          src="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_5bb312ca23e92f70.jpg" srcset="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_3ceff6b80f54cf8d.jpg 330w,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE_hu_5bb312ca23e92f70.jpg 660w
+          
+            ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg 800w
+          
+          
+            ,https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg 800w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
+</figure>
+</center>
+根据SWDA的架构图得知，数据从Flume的Sink被输送到HDFS。其实我在实际操作中，发现并不是上图描述的这么流畅。数据从Flume中被输送到本地磁盘中，之后再通过Python脚本把数据导入到<a href="https://hive.apache.org/" target="_blank" rel="noreferrer">Hive</a>表中，有关Python脚本的运行内容，后文我会详细介绍。从Python脚本的内容得知，在数据导入至Hive表的这个过程当中，是非常之罗嗦的，原因嘛，呵呵，实在不想提了。</p>
+<p>Hive是基于Hadoop的一个数据仓库工具，可以将结构化的文件数据映射为一张数据库表，并提供简单的Sql查询功能，可以将Sql语句转换为MapReduce任务进行运行。</p>
+<p>据了解，Hive一共有四种常见的数据导入方式:</p>
+<ul>
+<li>从本地文件系统中导入数据到Hive表；</li>
+<li>从HDFS上导入数据到Hive表；</li>
+<li>从别的表中查询出相应的数据并导入到Hive表中；</li>
+<li>在创建表的时候通过从别的表中查询出相应的记录并插入到所创建的表中。</li>
+</ul>
+<p>通过对这四种方式的描述，对于SWDA中数据导入到Hive表的方式，应该很迅速的就可以选择出最好的导入方式——从本地文件系统中导入数据到Hive表。但是通过查看Python脚本得知，数据首先会从本地导入至HDFS中，然后再从HDFS中导入至Hive表，并且在导入至Hive之后再把HDFS中是文件删掉。噢，天！这完全违背了奥卡姆剃刀原理。</p>
+<p>在数据导入到Hive之后，就开始通过一系列的Python脚本来调度sql语句，进行数据挖掘。将Hive最终得到的结果通过sqlload（也是Python脚本来调度）来导入至ORACLE数据库中。这些数据分了四层来存储计算，有数据来源层（S），临时存储层（TM），中间层（M）以及应用展现层（A）。在ORACLE中除了TM层没有，其它三层也同样存在。但是在ORACLE中，并不存在大量的数据计算，只有仅仅几个存储过程。大量的数据计算都在Hive中进行，ORACLE主要的功能就是为了展现，所以在ORACLE中最重要的一层就是A层。</p>
+<p>到此，有关软通动力所负责内容的架构已经说完了。</p>
+<h3 id="平台" class="relative group">平台 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%b9%b3%e5%8f%b0" aria-label="锚点">#</a></span></h3><p>我刚进这个项目的时候，每天的任务很少，主要是阅读那些Python脚本。
+那些Python脚本是根据表名来制定命名规则的。所以同一层次的Python脚本内容基本一致，以至于需要读的脚本也非常少。在这里我挑几个脚本来描述一下它们的作用。</p>
+<p>我认为最重要的一个脚本就是HiveClient.py，它相当于整个计算框架的心脏。因为在之后我所修改的每个脚本中都会调用它里面的方法，就像是一根根血管都与它相连。在HiveClient.py里面集成了很多方法，这些方法通过函数的命名就可以很清楚知道它的作用是什么。比如exec_sql，这是用来执行sql语句的，在a、m、tm开头的Python脚本中，都会调用此方法来执行sql语句。再比如load_local_into_hive，很明显，它是为了将数据导入至Hive表中，通过阅读这个方法，我发现其实这个函数的命名并不妥当。因为在这个函数里面，开发人员设置了一个开关，可以指定数据的源头是在本地还是在HDFS中，也就是说这个方法不仅可以让本地的数据导入到Hive也可以使HDFS中的数据导入到Hive。所以我觉得将名字改为load_data_into_hive将更加妥当。</p>
+<p>在HiveClient.py中还有很多有意思的方法，在这里就不赘述了。在后来开发客户数据分析系统（CDA）时，我又根据原来的HiveClient.py脚本，在其中添加了几个方法，目的是为了给本地文件转变编码格式和删除本地文件。</p>
+<p>以s开头的脚本都是为了将数据导入到Hive表中，这并没有什么可说的。只是，在我开发CDA的时候，大部分脚本是根据SDA中的脚本修改所得，里面一些的所定义的变量并不是很清晰，所以也让我费了一些时间来梳理这些变量的定义。</p>
+<p>上文中也提到了，以a、m、tm开头的脚本都是在Hive内部执行一些sql语句，但是这些sql语句的功能根据各个层次的不同又各不相同。
+有一次，在开发CDA时，宾哥让我把数据源文件通过Python脚本导入只Hive中。当时Python脚本已经写好，并且已经测试了一段时间，是没有问题的。但是那次让我导入的数据有1.1G，1400多万行。在执行脚本的时候，以非常之快的速度就结束了，我非常惊讶。表中也确实存在数据，但是当我查询数据的行数时，发现只有1万多行。当时认为一定是脚本出错了，于是我开始手动对数据进行操作。后来发现，当我在对文件转换编码格式之后，文件突然从1.1G缩小为2M多。哦！原因找到了，我兴奋极了。可是我当时却找不到解决的办法，因为没有网络，手机也很不方便。晚上回家后我才知道解决的办法。其实很简单，只要在命令之后加强制转换的选项就可以。看，没有了网络，就好像在睡觉时丢失了枕头，让人心神不宁。</p>
+<p>软通动力公司内部自己研发了一个用来作业调度的平台，用起来很方便，也很简单，叫做SMC作业调度平台。在我看来，这个平台上只有作业流和作业。在SMC上可以调度多种格式的脚本，把这些脚本编制成作业然后再通过把一个个作业串联起来，形成作业流，并且还支持定时执行，这样就完全可以实现自动化脚本执行。但是有一点不好的就是，有时候因为脚本内容的原因，会导致作业流执行失败，但是报错原因并不是实际的真实错误，而是SMC中的错误，只有手动去后台查看Hive运行日志才会发现真实的错误。假如让一个新同事用SMC来调度作业，出错的时候极易可能会误导他。还有一个小小的不足之处就是，在SMC中配置作业的时候，需要非常认真。有一次作业运行失败，错误信息提示找不到相应的脚本文件，但是我的查看了后台和作业的配置，一点错也没有。那时我一度怀疑是SMC平台初现了BUG，后来实在找不到答案，只能求助宾哥。之间宾哥拿着鼠标在配置作业流的页面上点了几下，在一处停顿下来，敲了一下退格键，就解决了。原来是我在配置作业的时候，在添加脚本名称时，在脚本名称的后面不小心多复制了一个空格，导致SMC找不到作业，冤哉！</p>
+<p>在项目二期的时候开发过一段时间的Hive SQL，这就真的考验自己的耐心了。恩，很负责的说，和技术没什么关系，毕竟我感觉还是挺简单的。麻烦之处就在于你需要将之前的源码全部读一遍，因为他们写的那个逻辑啊！！！我和宾哥不止一次的吐槽它，一点注释也没有，sql也不按要求的格式写，我之前写过的开发规范就真的是废话一篇，扔在未知的盘符里任其生锈发霉！！！<strong>但还是在这里说一下，没有好的代码书写习惯，没有严格的规范准则，绝对是在给别人或自己挖坑。</strong></p>
+<h3 id="总结" class="relative group">总结 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%80%bb%e7%bb%93" aria-label="锚点">#</a></span></h3><p>今天这篇文章主要讲了某银行的大数据平台处理系统，用到了很多打数据处理的东西。但是并没有做什么深奥的挖掘，银行有着非常健康的数据，如果在数据上做一些深度的数据挖掘，想必肯定会创造出很多利益的。目前软通的这套系统主要起到一个数据采集的作用，表层面的数据分析以及可视化并没有跟上数据时代的脚步，就算后面有百分点为其做用户画像，但也限于做推荐系统，银行方面并没有做更多的需求，这是我认为比较可惜的地方。虽然我工作的同时也一直向机器学习的方向努力着，但没有起到任何作用。</p>
+<p>写自 2016-05-24</p>
+<h3 id="后话" class="relative group">后话 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%90%8e%e8%af%9d" aria-label="锚点">#</a></span></h3><p>之所以毅然绝然地离开了软通，主要是因为银行项目的技术更新迭代起来太慢，在其中并没有什么深奥的技术可用，都是一些杂七杂八的事情；并且我的兴趣并非大数据处理，而是机器学习或者数据分析。虽然在软通也能够学到很多东西，但对于好奇心及其强烈的我而言，无异于被关在了铁笼子里不能自由飞翔。同事哥哥们都对我非常好，这是让我感觉非常值得感恩的地方。</p>
+<p><strong>人生苦短，做自己最爱的事情。我爱数据。</strong></p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="512"
+        height="512"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="小隐"
+        loading="lazy" decoding="async"
+        
+          src="https://hippoinv.com/img/android-chrome-512x512.png"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          作者
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          小隐
+        </div>
+      
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="mailto:yinlife777@gmail.com"
+          target="_blank"
+          aria-label="Envelope"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg></span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://service.weibo.com/share/share.php?url=https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/&amp;appkey=&amp;title=%e6%9f%90%e9%93%b6%e8%a1%8c%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%b9%b3%e5%8f%b0%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f&amp;pic=&amp;ralateUid=&amp;lang"
+          title="分享到 微博"
+          aria-label="分享到 微博"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="currentColor" d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8 .3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4 .6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></svg></span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="mailto:?body=https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/&amp;subject=%e6%9f%90%e9%93%b6%e8%a1%8c%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%b9%b3%e5%8f%b0%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f"
+          title="通过电子邮件发送"
+          aria-label="通过电子邮件发送"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/&amp;title=%e6%9f%90%e9%93%b6%e8%a1%8c%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%b9%b3%e5%8f%b0%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f"
+          title="分享到 LinkedIn"
+          aria-label="分享到 LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://x.com/intent/tweet/?url=https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-isoftstone_work/&amp;text=%e6%9f%90%e9%93%b6%e8%a1%8c%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%b9%b3%e5%8f%b0%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f"
+          title="分享到 X"
+          aria-label="分享到 X"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+</span></a
+        >
+      
+    
+  </section>
+
+
+      
+  
+    
+    
+    
+      
+      
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="https://hippoinv.com/posts/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0-%E8%81%8A%E8%81%8A%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >聊聊随机森林</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2016-10-28 00:00:00 &#43;0000 UTC">2016-10-28</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      <footer class="py-10 print:hidden">
+  
+  
+    <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex list-none flex-col sm:flex-row">
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/privacy/"
+                title="隐私政策"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >隐私政策</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+          
+          <li class="group mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0">
+            
+              <a
+                href="/copyright/"
+                title="版权声明"
+                
+                ><span
+                    class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                    >版权声明</span
+                  >
+                </a
+              >
+            
+          </li>
+        
+      </ul>
+    </nav>
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © (2023-2026) <a href="https://hippoinv.com" target="_blank" rel="noreferrer">Hippo Inv.</a>
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class=" cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title=""
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title=""
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://hippoinv.com/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
