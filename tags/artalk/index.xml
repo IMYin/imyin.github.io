@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artalk on Hippo Inv.</title>
-    <link>https://hippoinv.com/tags/artalk/</link>
+    <link>https://blog.hippoinv.com/tags/artalk/</link>
     <description>Recent content in Artalk on Hippo Inv.</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; (2023-2026) [Hippo Inv.](https://hippoinv.com)</copyright>
     <lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hippoinv.com/tags/artalk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.hippoinv.com/tags/artalk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>忙碌的癸亥月</title>
-      <link>https://hippoinv.com/posts/busy_november/</link>
+      <link>https://blog.hippoinv.com/posts/busy_november/</link>
       <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://hippoinv.com/posts/busy_november/</guid>
+      <guid>https://blog.hippoinv.com/posts/busy_november/</guid>
       <description>记录了最近的忙碌状态以及在搭建网站过程中的学习和探索。</description>
     </item>
   </channel>
