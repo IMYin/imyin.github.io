@@ -10,14 +10,14 @@
                     "transaction_type": "Buy",
                     "volume": 53700.0,
                     "trade_price": 7.48,
-                    "last_close": 7.55
+                    "last_close": 7.75
                 },
                 {
                     "date": "20260105",
                     "transaction_type": "Sell",
                     "volume": 53700.0,
                     "trade_price": 7.37,
-                    "last_close": 7.55
+                    "last_close": 7.75
                 }
             ]
         },
@@ -31,14 +31,14 @@
                     "transaction_type": "Buy",
                     "volume": 5800.0,
                     "trade_price": 115.0,
-                    "last_close": 124.29
+                    "last_close": 128.94
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 2300.0,
                     "trade_price": 115.39,
-                    "last_close": 124.29
+                    "last_close": 128.94
                 }
             ]
         },
@@ -52,15 +52,23 @@
                     "transaction_type": "Buy",
                     "volume": 4800.0,
                     "trade_price": 83.3,
-                    "last_close": 83.88
+                    "last_close": 84.28
                 }
             ]
         },
         "301308": {
             "name": "江波龙",
             "code": "301308",
-            "profit": 9617.34,
-            "trades": []
+            "profit": 727.34,
+            "trades": [
+                {
+                    "date": "20260106",
+                    "transaction_type": "Buy",
+                    "volume": 1400.0,
+                    "trade_price": 277.0,
+                    "last_close": 277.55
+                }
+            ]
         },
         "600580": {
             "name": "卧龙电驱",
@@ -72,28 +80,28 @@
                     "transaction_type": "Buy",
                     "volume": 15400.0,
                     "trade_price": 43.96,
-                    "last_close": 47.15
+                    "last_close": 48.22
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 43.43,
-                    "last_close": 47.15
+                    "last_close": 48.22
                 }
             ]
         },
         "688608": {
             "name": "恒玄科技",
             "code": "688608",
-            "profit": 15053.68,
+            "profit": 15478.68,
             "trades": [
                 {
                     "date": "20251224",
                     "transaction_type": "Buy",
                     "volume": 1700.0,
                     "trade_price": 226.33,
-                    "last_close": 235.21
+                    "last_close": 235.46
                 }
             ]
         }
