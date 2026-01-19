@@ -10,14 +10,14 @@
                     "transaction_type": "Buy",
                     "volume": 53700.0,
                     "trade_price": 7.48,
-                    "last_close": 9.19
+                    "last_close": 9.4
                 },
                 {
                     "date": "20260105",
                     "transaction_type": "Sell",
                     "volume": 53700.0,
                     "trade_price": 7.37,
-                    "last_close": 9.19
+                    "last_close": 9.4
                 }
             ]
         },
@@ -31,29 +31,37 @@
                     "transaction_type": "Buy",
                     "volume": 5800.0,
                     "trade_price": 115.0,
-                    "last_close": 125.47
+                    "last_close": 132.6
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 2300.0,
                     "trade_price": 115.39,
-                    "last_close": 125.47
+                    "last_close": 132.6
                 },
                 {
                     "date": "20260108",
                     "transaction_type": "Sell",
                     "volume": 3500.0,
                     "trade_price": 124.2,
-                    "last_close": 125.47
+                    "last_close": 132.6
                 }
             ]
         },
         "300677": {
             "name": "英科医疗",
             "code": "300677",
-            "profit": 1671.09,
-            "trades": []
+            "profit": 6822.09,
+            "trades": [
+                {
+                    "date": "20260114",
+                    "transaction_type": "Buy",
+                    "volume": 10100.0,
+                    "trade_price": 41.32,
+                    "last_close": 42.0
+                }
+            ]
         },
         "300718": {
             "name": "长盛轴承",
@@ -65,14 +73,14 @@
                     "transaction_type": "Buy",
                     "volume": 4800.0,
                     "trade_price": 83.3,
-                    "last_close": 83.91
+                    "last_close": 85.59
                 },
                 {
                     "date": "20260107",
                     "transaction_type": "Sell",
                     "volume": 4800.0,
                     "trade_price": 83.46,
-                    "last_close": 83.91
+                    "last_close": 85.59
                 }
             ]
         },
@@ -86,14 +94,14 @@
                     "transaction_type": "Buy",
                     "volume": 1400.0,
                     "trade_price": 277.0,
-                    "last_close": 353.48
+                    "last_close": 336.25
                 },
                 {
                     "date": "20260113",
                     "transaction_type": "Sell",
                     "volume": 1400.0,
                     "trade_price": 275.54,
-                    "last_close": 353.48
+                    "last_close": 336.25
                 }
             ]
         },
@@ -107,21 +115,21 @@
                     "transaction_type": "Buy",
                     "volume": 15400.0,
                     "trade_price": 43.96,
-                    "last_close": 47.35
+                    "last_close": 48.42
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 43.43,
-                    "last_close": 47.35
+                    "last_close": 48.42
                 },
                 {
                     "date": "20260108",
                     "transaction_type": "Sell",
                     "volume": 9200.0,
                     "trade_price": 47.13,
-                    "last_close": 47.35
+                    "last_close": 48.42
                 }
             ]
         },
@@ -135,14 +143,14 @@
                     "transaction_type": "Buy",
                     "volume": 1700.0,
                     "trade_price": 226.33,
-                    "last_close": 244.82
+                    "last_close": 235.96
                 },
                 {
                     "date": "20260113",
                     "transaction_type": "Sell",
                     "volume": 1700.0,
                     "trade_price": 230.9,
-                    "last_close": 244.82
+                    "last_close": 235.96
                 }
             ]
         }

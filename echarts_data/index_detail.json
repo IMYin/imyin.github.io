@@ -161,170 +161,188 @@
             "high": 8.353,
             "pct_chg": 0.22,
             "daily_return": 0.002174700978615496
+        },
+        {
+            "trade_date": "20260119",
+            "open": 8.27,
+            "close": 8.348,
+            "low": 8.25,
+            "high": 8.397,
+            "pct_chg": 0.64,
+            "daily_return": 0.006389391199517869
         }
     ],
     "hs300": [
         {
             "trade_date": "20251222",
-            "open": 4.702,
-            "close": 4.73,
-            "low": 4.702,
-            "high": 4.735,
-            "pct_chg": 0.9,
+            "open": 4.579,
+            "close": 4.607,
+            "low": 4.579,
+            "high": 4.612,
+            "pct_chg": 0.92,
             "daily_return": 0.0
         },
         {
             "trade_date": "20251223",
-            "open": 4.735,
-            "close": 4.74,
-            "low": 4.726,
-            "high": 4.763,
-            "pct_chg": 0.21,
-            "daily_return": 0.0021141649048626032
+            "open": 4.612,
+            "close": 4.617,
+            "low": 4.603,
+            "high": 4.64,
+            "pct_chg": 0.22,
+            "daily_return": 0.0021706099413933977
         },
         {
             "trade_date": "20251224",
-            "open": 4.74,
-            "close": 4.757,
-            "low": 4.726,
-            "high": 4.765,
-            "pct_chg": 0.36,
-            "daily_return": 0.0035864978902953037
+            "open": 4.617,
+            "close": 4.634,
+            "low": 4.603,
+            "high": 4.642,
+            "pct_chg": 0.37,
+            "daily_return": 0.0036820446177172617
         },
         {
             "trade_date": "20251225",
-            "open": 4.75,
-            "close": 4.766,
-            "low": 4.744,
-            "high": 4.777,
+            "open": 4.627,
+            "close": 4.643,
+            "low": 4.621,
+            "high": 4.654,
             "pct_chg": 0.19,
-            "daily_return": 0.001891948707168467
+            "daily_return": 0.0019421665947345623
         },
         {
             "trade_date": "20251226",
-            "open": 4.766,
-            "close": 4.784,
-            "low": 4.755,
-            "high": 4.801,
-            "pct_chg": 0.38,
-            "daily_return": 0.003776751993285643
+            "open": 4.643,
+            "close": 4.661,
+            "low": 4.632,
+            "high": 4.678,
+            "pct_chg": 0.39,
+            "daily_return": 0.003876803790652472
         },
         {
             "trade_date": "20251229",
-            "open": 4.78,
-            "close": 4.763,
-            "low": 4.749,
-            "high": 4.794,
-            "pct_chg": -0.44,
-            "daily_return": -0.004389632107023367
+            "open": 4.657,
+            "close": 4.64,
+            "low": 4.626,
+            "high": 4.671,
+            "pct_chg": -0.45,
+            "daily_return": -0.0045054709289851225
         },
         {
             "trade_date": "20251230",
-            "open": 4.746,
-            "close": 4.773,
-            "low": 4.742,
-            "high": 4.79,
-            "pct_chg": 0.21,
-            "daily_return": 0.002099517111064486
+            "open": 4.623,
+            "close": 4.65,
+            "low": 4.619,
+            "high": 4.667,
+            "pct_chg": 0.22,
+            "daily_return": 0.0021551724137931494
         },
         {
             "trade_date": "20251231",
-            "open": 4.777,
-            "close": 4.753,
-            "low": 4.742,
-            "high": 4.789,
-            "pct_chg": -0.42,
-            "daily_return": -0.004190236748376153
+            "open": 4.654,
+            "close": 4.63,
+            "low": 4.619,
+            "high": 4.666,
+            "pct_chg": -0.43,
+            "daily_return": -0.004301075268817289
         },
         {
             "trade_date": "20260105",
-            "open": 4.783,
-            "close": 4.844,
-            "low": 4.78,
-            "high": 4.848,
-            "pct_chg": 1.91,
-            "daily_return": 0.019145802650957222
+            "open": 4.66,
+            "close": 4.721,
+            "low": 4.657,
+            "high": 4.725,
+            "pct_chg": 1.97,
+            "daily_return": 0.019654427645788397
         },
         {
             "trade_date": "20260106",
-            "open": 4.85,
-            "close": 4.919,
-            "low": 4.848,
-            "high": 4.92,
-            "pct_chg": 1.55,
-            "daily_return": 0.015483071841453144
+            "open": 4.727,
+            "close": 4.796,
+            "low": 4.725,
+            "high": 4.797,
+            "pct_chg": 1.59,
+            "daily_return": 0.015886464732048244
         },
         {
             "trade_date": "20260107",
-            "open": 4.92,
-            "close": 4.901,
-            "low": 4.876,
-            "high": 4.927,
-            "pct_chg": -0.37,
-            "daily_return": -0.0036592803415328445
+            "open": 4.797,
+            "close": 4.778,
+            "low": 4.753,
+            "high": 4.804,
+            "pct_chg": -0.38,
+            "daily_return": -0.0037531276063387242
         },
         {
             "trade_date": "20260108",
-            "open": 4.888,
-            "close": 4.863,
-            "low": 4.843,
-            "high": 4.894,
-            "pct_chg": -0.78,
-            "daily_return": -0.007753519689859045
+            "open": 4.765,
+            "close": 4.74,
+            "low": 4.72,
+            "high": 4.771,
+            "pct_chg": -0.8,
+            "daily_return": -0.007953118459606445
         },
         {
             "trade_date": "20260109",
-            "open": 4.857,
-            "close": 4.885,
-            "low": 4.844,
-            "high": 4.903,
-            "pct_chg": 0.45,
-            "daily_return": 0.004523956405510843
+            "open": 4.734,
+            "close": 4.762,
+            "low": 4.721,
+            "high": 4.78,
+            "pct_chg": 0.46,
+            "daily_return": 0.004641350210970341
         },
         {
             "trade_date": "20260112",
-            "open": 4.893,
-            "close": 4.913,
-            "low": 4.861,
-            "high": 4.929,
-            "pct_chg": 0.57,
-            "daily_return": 0.005731832139201698
+            "open": 4.77,
+            "close": 4.79,
+            "low": 4.738,
+            "high": 4.806,
+            "pct_chg": 0.59,
+            "daily_return": 0.0058798824023520435
         },
         {
             "trade_date": "20260113",
-            "open": 4.922,
-            "close": 4.896,
-            "low": 4.876,
-            "high": 4.965,
+            "open": 4.799,
+            "close": 4.773,
+            "low": 4.753,
+            "high": 4.842,
             "pct_chg": -0.35,
-            "daily_return": -0.0034602076124568004
+            "daily_return": -0.0035490605427975774
         },
         {
             "trade_date": "20260114",
-            "open": 4.896,
-            "close": 4.866,
-            "low": 4.841,
-            "high": 4.949,
-            "pct_chg": -0.61,
-            "daily_return": -0.006127450980392246
+            "open": 4.773,
+            "close": 4.743,
+            "low": 4.718,
+            "high": 4.826,
+            "pct_chg": -0.63,
+            "daily_return": -0.00628535512256434
         },
         {
             "trade_date": "20260115",
-            "open": 4.849,
-            "close": 4.875,
-            "low": 4.843,
-            "high": 4.894,
-            "pct_chg": 0.18,
-            "daily_return": 0.0018495684340320562
+            "open": 4.726,
+            "close": 4.752,
+            "low": 4.72,
+            "high": 4.771,
+            "pct_chg": 0.19,
+            "daily_return": 0.001897533206830948
         },
         {
             "trade_date": "20260116",
-            "open": 4.905,
-            "close": 4.859,
-            "low": 4.838,
-            "high": 4.919,
-            "pct_chg": -0.33,
-            "daily_return": -0.0032820512820512793
+            "open": 4.782,
+            "close": 4.736,
+            "low": 4.715,
+            "high": 4.796,
+            "pct_chg": -0.34,
+            "daily_return": -0.0033670033670033517
+        },
+        {
+            "trade_date": "20260119",
+            "open": 4.737,
+            "close": 4.738,
+            "low": 4.718,
+            "high": 4.769,
+            "pct_chg": 0.04,
+            "daily_return": 0.0004222972972973693
         }
     ],
     "sh": [
@@ -489,6 +507,15 @@
             "high": 4140.23,
             "pct_chg": -0.26,
             "daily_return": -0.0025993288916987822
+        },
+        {
+            "trade_date": "20260119",
+            "open": 4090.72,
+            "close": 4114.0,
+            "low": 4090.06,
+            "high": 4126.52,
+            "pct_chg": 0.29,
+            "daily_return": 0.002947407427271731
         }
     ]
 }
