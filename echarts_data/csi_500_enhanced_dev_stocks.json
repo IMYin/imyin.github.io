@@ -10,14 +10,14 @@
                     "transaction_type": "Buy",
                     "volume": 53700.0,
                     "trade_price": 7.48,
-                    "last_close": 9.95
+                    "last_close": 10.85
                 },
                 {
                     "date": "20260105",
                     "transaction_type": "Sell",
                     "volume": 53700.0,
                     "trade_price": 7.37,
-                    "last_close": 9.95
+                    "last_close": 10.85
                 }
             ]
         },
@@ -31,35 +31,35 @@
                     "transaction_type": "Buy",
                     "volume": 5800.0,
                     "trade_price": 115.0,
-                    "last_close": 121.89
+                    "last_close": 123.15
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 2300.0,
                     "trade_price": 115.39,
-                    "last_close": 121.89
+                    "last_close": 123.15
                 },
                 {
                     "date": "20260108",
                     "transaction_type": "Sell",
                     "volume": 3500.0,
                     "trade_price": 124.2,
-                    "last_close": 121.89
+                    "last_close": 123.15
                 }
             ]
         },
         "300677": {
             "name": "英科医疗",
             "code": "300677",
-            "profit": 35001.09,
+            "profit": 23588.09,
             "trades": [
                 {
                     "date": "20260114",
                     "transaction_type": "Buy",
                     "volume": 10100.0,
                     "trade_price": 41.32,
-                    "last_close": 44.79
+                    "last_close": 43.66
                 }
             ]
         },
@@ -73,14 +73,14 @@
                     "transaction_type": "Buy",
                     "volume": 4800.0,
                     "trade_price": 83.3,
-                    "last_close": 82.15
+                    "last_close": 81.65
                 },
                 {
                     "date": "20260107",
                     "transaction_type": "Sell",
                     "volume": 4800.0,
                     "trade_price": 83.46,
-                    "last_close": 82.15
+                    "last_close": 81.65
                 }
             ]
         },
@@ -94,14 +94,14 @@
                     "transaction_type": "Buy",
                     "volume": 1400.0,
                     "trade_price": 277.0,
-                    "last_close": 360.5
+                    "last_close": 368.45
                 },
                 {
                     "date": "20260113",
                     "transaction_type": "Sell",
                     "volume": 1400.0,
                     "trade_price": 275.54,
-                    "last_close": 360.5
+                    "last_close": 368.45
                 }
             ]
         },
@@ -115,34 +115,40 @@
                     "transaction_type": "Buy",
                     "volume": 15400.0,
                     "trade_price": 43.96,
-                    "last_close": 44.68
+                    "last_close": 44.97
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 43.43,
-                    "last_close": 44.68
+                    "last_close": 44.97
                 },
                 {
                     "date": "20260108",
                     "transaction_type": "Sell",
                     "volume": 9200.0,
                     "trade_price": 47.13,
-                    "last_close": 44.68
+                    "last_close": 44.97
                 }
             ]
         },
         "688002": {
             "name": "睿创微纳",
             "code": "688002",
-            "profit": -11164.96,
+            "profit": -16000.96,
+            "trades": []
+        },
+        "688336": {
+            "name": "三生国健",
+            "code": "688336",
+            "profit": -461.08,
             "trades": []
         },
         "688599": {
             "name": "天合光能",
             "code": "688599",
-            "profit": -6339.74,
+            "profit": -4106.74,
             "trades": []
         },
         "688608": {
@@ -155,14 +161,14 @@
                     "transaction_type": "Buy",
                     "volume": 1700.0,
                     "trade_price": 226.33,
-                    "last_close": 233.73
+                    "last_close": 241.37
                 },
                 {
                     "date": "20260113",
                     "transaction_type": "Sell",
                     "volume": 1700.0,
                     "trade_price": 230.9,
-                    "last_close": 233.73
+                    "last_close": 241.37
                 }
             ]
         }
