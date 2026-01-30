@@ -10,14 +10,14 @@
                     "transaction_type": "Buy",
                     "volume": 53700.0,
                     "trade_price": 7.48,
-                    "last_close": 9.85
+                    "last_close": 9.69
                 },
                 {
                     "date": "20260105",
                     "transaction_type": "Sell",
                     "volume": 53700.0,
                     "trade_price": 7.37,
-                    "last_close": 9.85
+                    "last_close": 9.69
                 }
             ]
         },
@@ -31,21 +31,21 @@
                     "transaction_type": "Buy",
                     "volume": 5800.0,
                     "trade_price": 115.0,
-                    "last_close": 118.47
+                    "last_close": 117.06
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 2300.0,
                     "trade_price": 115.39,
-                    "last_close": 118.47
+                    "last_close": 117.06
                 },
                 {
                     "date": "20260108",
                     "transaction_type": "Sell",
                     "volume": 3500.0,
                     "trade_price": 124.2,
-                    "last_close": 118.47
+                    "last_close": 117.06
                 }
             ]
         },
@@ -59,7 +59,7 @@
                     "transaction_type": "Buy",
                     "volume": 10100.0,
                     "trade_price": 41.32,
-                    "last_close": 40.81
+                    "last_close": 41.86
                 }
             ]
         },
@@ -73,14 +73,14 @@
                     "transaction_type": "Buy",
                     "volume": 4800.0,
                     "trade_price": 83.3,
-                    "last_close": 79.15
+                    "last_close": 79.94
                 },
                 {
                     "date": "20260107",
                     "transaction_type": "Sell",
                     "volume": 4800.0,
                     "trade_price": 83.46,
-                    "last_close": 79.15
+                    "last_close": 79.94
                 }
             ]
         },
@@ -94,16 +94,22 @@
                     "transaction_type": "Buy",
                     "volume": 1400.0,
                     "trade_price": 277.0,
-                    "last_close": 358.8
+                    "last_close": 336.0
                 },
                 {
                     "date": "20260113",
                     "transaction_type": "Sell",
                     "volume": 1400.0,
                     "trade_price": 275.54,
-                    "last_close": 358.8
+                    "last_close": 336.0
                 }
             ]
+        },
+        "600131": {
+            "name": "国网信通",
+            "code": "600131",
+            "profit": -358.61,
+            "trades": []
         },
         "600580": {
             "name": "卧龙电驱",
@@ -115,28 +121,28 @@
                     "transaction_type": "Buy",
                     "volume": 15400.0,
                     "trade_price": 43.96,
-                    "last_close": 43.37
+                    "last_close": 43.94
                 },
                 {
                     "date": "20251224",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 43.43,
-                    "last_close": 43.37
+                    "last_close": 43.94
                 },
                 {
                     "date": "20260108",
                     "transaction_type": "Sell",
                     "volume": 9200.0,
                     "trade_price": 47.13,
-                    "last_close": 43.37
+                    "last_close": 43.94
                 }
             ]
         },
         "603444": {
             "name": "吉比特",
             "code": "603444",
-            "profit": -859.47,
+            "profit": -13159.47,
             "trades": []
         },
         "688002": {
@@ -149,27 +155,35 @@
                     "transaction_type": "Buy",
                     "volume": 2600.0,
                     "trade_price": 129.24,
-                    "last_close": 114.29
+                    "last_close": 112.92
                 }
             ]
         },
         "688336": {
             "name": "三生国健",
             "code": "688336",
-            "profit": -14665.08,
-            "trades": []
+            "profit": -18004.08,
+            "trades": [
+                {
+                    "date": "20260127",
+                    "transaction_type": "Buy",
+                    "volume": 5300.0,
+                    "trade_price": 63.61,
+                    "last_close": 60.22
+                }
+            ]
         },
         "688599": {
             "name": "天合光能",
             "code": "688599",
-            "profit": -24406.74,
+            "profit": -44300.74,
             "trades": [
                 {
                     "date": "20260123",
                     "transaction_type": "Buy",
                     "volume": 20300.0,
                     "trade_price": 20.93,
-                    "last_close": 19.73
+                    "last_close": 18.75
                 }
             ]
         },
@@ -183,14 +197,14 @@
                     "transaction_type": "Buy",
                     "volume": 1700.0,
                     "trade_price": 226.33,
-                    "last_close": 229.0
+                    "last_close": 220.5
                 },
                 {
                     "date": "20260113",
                     "transaction_type": "Sell",
                     "volume": 1700.0,
                     "trade_price": 230.9,
-                    "last_close": 229.0
+                    "last_close": 220.5
                 }
             ]
         }
