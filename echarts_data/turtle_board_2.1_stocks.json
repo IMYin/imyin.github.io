@@ -1,15 +1,27 @@
 {
     "stocks": {
+        "000533": {
+            "name": "顺钠股份",
+            "code": "000533",
+            "profit": -172.51,
+            "trades": []
+        },
+        "000815": {
+            "name": "美利云",
+            "code": "000815",
+            "profit": -6660.58,
+            "trades": []
+        },
         "600227": {
             "name": "赤天化",
             "code": "600227",
-            "profit": 1633.27,
+            "profit": 7870.92,
             "trades": []
         },
         "600470": {
             "name": "六国化工",
             "code": "600470",
-            "profit": -5410.87,
+            "profit": -10216.96,
             "trades": []
         },
         "600545": {
@@ -22,7 +34,15 @@
             "name": "诚邦股份",
             "code": "603316",
             "profit": 4205.7,
-            "trades": []
+            "trades": [
+                {
+                    "date": "20260305",
+                    "transaction_type": "Buy",
+                    "volume": 6200.0,
+                    "trade_price": 15.61,
+                    "last_close": 16.13
+                }
+            ]
         }
     }
 }
