@@ -3,13 +3,19 @@
         "000533": {
             "name": "顺钠股份",
             "code": "000533",
-            "profit": -172.51,
+            "profit": 961.49,
             "trades": []
         },
         "000815": {
             "name": "美利云",
             "code": "000815",
-            "profit": -6660.58,
+            "profit": -7510.58,
+            "trades": []
+        },
+        "600172": {
+            "name": "黄河旋风",
+            "code": "600172",
+            "profit": 77.27,
             "trades": []
         },
         "600227": {
@@ -28,7 +34,15 @@
             "name": "卓郎智能",
             "code": "600545",
             "profit": -5325.17,
-            "trades": []
+            "trades": [
+                {
+                    "date": "20260306",
+                    "transaction_type": "Buy",
+                    "volume": 23900.0,
+                    "trade_price": 4.09,
+                    "last_close": 4.16
+                }
+            ]
         },
         "603316": {
             "name": "诚邦股份",
@@ -40,9 +54,22 @@
                     "transaction_type": "Buy",
                     "volume": 6200.0,
                     "trade_price": 15.61,
-                    "last_close": 16.13
+                    "last_close": 16.33
+                },
+                {
+                    "date": "20260306",
+                    "transaction_type": "Sell",
+                    "volume": 6200.0,
+                    "trade_price": 16.3,
+                    "last_close": 16.33
                 }
             ]
+        },
+        "603421": {
+            "name": "鼎信通讯",
+            "code": "603421",
+            "profit": 1541.36,
+            "trades": []
         }
     }
 }
