@@ -3,32 +3,48 @@
         "000533": {
             "name": "顺钠股份",
             "code": "000533",
-            "profit": 961.49,
+            "profit": 3331.14,
             "trades": []
         },
         "000815": {
             "name": "美利云",
             "code": "000815",
-            "profit": -7510.58,
+            "profit": -4716.39,
             "trades": []
         },
         "600172": {
             "name": "黄河旋风",
             "code": "600172",
-            "profit": 77.27,
+            "profit": 809.26,
             "trades": []
         },
         "600227": {
             "name": "赤天化",
             "code": "600227",
             "profit": 7870.92,
-            "trades": []
+            "trades": [
+                {
+                    "date": "20260309",
+                    "transaction_type": "Buy",
+                    "volume": 27400.0,
+                    "trade_price": 3.56,
+                    "last_close": 3.97
+                }
+            ]
         },
         "600470": {
             "name": "六国化工",
             "code": "600470",
             "profit": -10216.96,
-            "trades": []
+            "trades": [
+                {
+                    "date": "20260309",
+                    "transaction_type": "Buy",
+                    "volume": 10800.0,
+                    "trade_price": 9.15,
+                    "last_close": 8.47
+                }
+            ]
         },
         "600545": {
             "name": "卓郎智能",
@@ -40,9 +56,22 @@
                     "transaction_type": "Buy",
                     "volume": 23900.0,
                     "trade_price": 4.09,
-                    "last_close": 4.16
+                    "last_close": 4.04
+                },
+                {
+                    "date": "20260309",
+                    "transaction_type": "Sell",
+                    "volume": 23900.0,
+                    "trade_price": 3.87,
+                    "last_close": 4.04
                 }
             ]
+        },
+        "601330": {
+            "name": "绿色动力",
+            "code": "601330",
+            "profit": 304.4,
+            "trades": []
         },
         "603316": {
             "name": "诚邦股份",
@@ -54,21 +83,21 @@
                     "transaction_type": "Buy",
                     "volume": 6200.0,
                     "trade_price": 15.61,
-                    "last_close": 16.33
+                    "last_close": 16.36
                 },
                 {
                     "date": "20260306",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 16.3,
-                    "last_close": 16.33
+                    "last_close": 16.36
                 }
             ]
         },
         "603421": {
             "name": "鼎信通讯",
             "code": "603421",
-            "profit": 1541.36,
+            "profit": -3017.64,
             "trades": []
         }
     }
