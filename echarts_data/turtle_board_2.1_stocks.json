@@ -4,13 +4,29 @@
             "name": "顺钠股份",
             "code": "000533",
             "profit": 3331.14,
-            "trades": []
+            "trades": [
+                {
+                    "date": "20260310",
+                    "transaction_type": "Buy",
+                    "volume": 5400.0,
+                    "trade_price": 17.69,
+                    "last_close": 16.96
+                }
+            ]
         },
         "000815": {
             "name": "美利云",
             "code": "000815",
             "profit": -4716.39,
-            "trades": []
+            "trades": [
+                {
+                    "date": "20260310",
+                    "transaction_type": "Buy",
+                    "volume": 5000.0,
+                    "trade_price": 19.23,
+                    "last_close": 16.96
+                }
+            ]
         },
         "600172": {
             "name": "黄河旋风",
@@ -28,7 +44,14 @@
                     "transaction_type": "Buy",
                     "volume": 27400.0,
                     "trade_price": 3.56,
-                    "last_close": 3.97
+                    "last_close": 4.37
+                },
+                {
+                    "date": "20260310",
+                    "transaction_type": "Sell",
+                    "volume": 27400.0,
+                    "trade_price": 3.85,
+                    "last_close": 4.37
                 }
             ]
         },
@@ -42,7 +65,14 @@
                     "transaction_type": "Buy",
                     "volume": 10800.0,
                     "trade_price": 9.15,
-                    "last_close": 8.47
+                    "last_close": 8.53
+                },
+                {
+                    "date": "20260310",
+                    "transaction_type": "Sell",
+                    "volume": 10800.0,
+                    "trade_price": 8.21,
+                    "last_close": 8.53
                 }
             ]
         },
@@ -56,21 +86,21 @@
                     "transaction_type": "Buy",
                     "volume": 23900.0,
                     "trade_price": 4.09,
-                    "last_close": 4.04
+                    "last_close": 3.83
                 },
                 {
                     "date": "20260309",
                     "transaction_type": "Sell",
                     "volume": 23900.0,
                     "trade_price": 3.87,
-                    "last_close": 4.04
+                    "last_close": 3.83
                 }
             ]
         },
         "601330": {
             "name": "绿色动力",
             "code": "601330",
-            "profit": 304.4,
+            "profit": -4210.6,
             "trades": []
         },
         "603316": {
@@ -83,21 +113,21 @@
                     "transaction_type": "Buy",
                     "volume": 6200.0,
                     "trade_price": 15.61,
-                    "last_close": 16.36
+                    "last_close": 15.81
                 },
                 {
                     "date": "20260306",
                     "transaction_type": "Sell",
                     "volume": 6200.0,
                     "trade_price": 16.3,
-                    "last_close": 16.36
+                    "last_close": 15.81
                 }
             ]
         },
         "603421": {
             "name": "鼎信通讯",
             "code": "603421",
-            "profit": -3017.64,
+            "profit": -2880.92,
             "trades": []
         }
     }
