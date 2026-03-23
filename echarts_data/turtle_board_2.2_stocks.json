@@ -10,7 +10,14 @@
                     "transaction_type": "Buy",
                     "volume": 67500.0,
                     "trade_price": 2.92,
-                    "last_close": 2.54
+                    "last_close": 2.41
+                },
+                {
+                    "date": "20260318",
+                    "transaction_type": "Sell",
+                    "volume": 67500.0,
+                    "trade_price": 2.76,
+                    "last_close": 2.41
                 }
             ]
         },
@@ -24,43 +31,58 @@
                     "transaction_type": "Buy",
                     "volume": 27600.0,
                     "trade_price": 7.1,
-                    "last_close": 5.78
+                    "last_close": 5.58
+                },
+                {
+                    "date": "20260318",
+                    "transaction_type": "Sell",
+                    "volume": 27600.0,
+                    "trade_price": 6.48,
+                    "last_close": 5.58
                 }
             ]
         },
         "002285": {
             "name": "世联行",
             "code": "002285",
-            "profit": -7053.72,
+            "profit": -20531.72,
             "trades": [
                 {
                     "date": "20260317",
                     "transaction_type": "Buy",
                     "volume": 58600.0,
                     "trade_price": 3.37,
-                    "last_close": 3.25
+                    "last_close": 3.02
                 }
             ]
         },
         "603105": {
             "name": "芯能科技",
             "code": "603105",
-            "profit": 2227.21,
+            "profit": 22295.21,
             "trades": [
                 {
                     "date": "20260317",
                     "transaction_type": "Buy",
                     "volume": 17300.0,
                     "trade_price": 11.45,
-                    "last_close": 11.58
+                    "last_close": 12.74
                 }
             ]
         },
         "605058": {
             "name": "澳弘电子",
             "code": "605058",
-            "profit": -11901.47,
-            "trades": []
+            "profit": -30216.47,
+            "trades": [
+                {
+                    "date": "20260318",
+                    "transaction_type": "Buy",
+                    "volume": 5500.0,
+                    "trade_price": 35.49,
+                    "last_close": 30.0
+                }
+            ]
         }
     }
 }
