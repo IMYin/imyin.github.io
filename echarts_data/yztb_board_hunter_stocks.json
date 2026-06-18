@@ -3,42 +3,42 @@
         "600280": {
             "name": "中央商场",
             "code": "600280",
-            "profit": -54653.45,
+            "profit": -63590.45,
             "trades": [
                 {
                     "date": "20260601",
                     "transaction_type": "Buy",
                     "volume": 99300.0,
                     "trade_price": 3.52,
-                    "last_close": 2.97
+                    "last_close": 2.88
                 }
             ]
         },
         "605277": {
             "name": "新亚电子",
             "code": "605277",
-            "profit": -115235.43,
+            "profit": -112655.43,
             "trades": [
                 {
                     "date": "20260601",
                     "transaction_type": "Buy",
                     "volume": 12900.0,
                     "trade_price": 27.08,
-                    "last_close": 18.15
+                    "last_close": 18.35
                 }
             ]
         },
         "605580": {
             "name": "恒盛能源",
             "code": "605580",
-            "profit": -75201.32,
+            "profit": -77441.32,
             "trades": [
                 {
                     "date": "20260529",
                     "transaction_type": "Buy",
                     "volume": 11200.0,
                     "trade_price": 30.941,
-                    "last_close": 24.23
+                    "last_close": 24.03
                 }
             ]
         }
