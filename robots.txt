@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://blog.hippoinv.com/sitemap.xml
